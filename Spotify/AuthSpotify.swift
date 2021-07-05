@@ -17,13 +17,15 @@ class AuthSpotify{
     
     init(){}
     
-    let clientID = ""
-    let clientSecret = ""
+    let clientID = "c5d59c7f1afa410db79986d63090b2b2"
+    let clientSecret = "14ab9809742e49e49980617741d6a436"
     var accessToken = ""
     let baseURL = "https://accounts.spotify.com/api/token"
     
     public func connect()
     {
+        //let group = DispatchGroup()
+        //group.enter()
         let parameters = ["client_id" : clientID,
                               "client_secret" : clientSecret,
                               "grant_type" : "client_credentials"]
@@ -38,6 +40,7 @@ class AuthSpotify{
                                     self.authorize = true
                             
                                     //print(self.accessToken)
+                                    //group.leave()
                                     
                                 }
                             case .failure(_): break

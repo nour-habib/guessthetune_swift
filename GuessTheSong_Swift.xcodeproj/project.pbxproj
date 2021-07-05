@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14112F2F2693803600E5EB38 /* CoreDataX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14112F2E2693803600E5EB38 /* CoreDataX.swift */; };
+		14112F31269380BF00E5EB38 /* TrackItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14112F30269380BF00E5EB38 /* TrackItem+CoreDataClass.swift */; };
 		143EF1972670223400FB47C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1962670223400FB47C1 /* AppDelegate.swift */; };
 		143EF1992670223400FB47C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1982670223400FB47C1 /* SceneDelegate.swift */; };
 		143EF19B2670223400FB47C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF19A2670223400FB47C1 /* ContentView.swift */; };
@@ -41,8 +43,6 @@
 		14DC95FA268801BA003C6B12 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC95F9268801BA003C6B12 /* SoundEffects.swift */; };
 		14DC960C268A738F003C6B12 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC960B268A738F003C6B12 /* FavouritesViewController.swift */; };
 		14DC9664268D163A003C6B12 /* TrackItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC9663268D163A003C6B12 /* TrackItem+CoreDataProperties.swift */; };
-		14DC967A268D1876003C6B12 /* TrackItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC9679268D1876003C6B12 /* TrackItem+CoreDataClass.swift */; };
-		14DC9689268D3337003C6B12 /* CoreDataX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC9688268D3337003C6B12 /* CoreDataX.swift */; };
 		14DC96A32690014B003C6B12 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC96A22690014B003C6B12 /* CustomColor.swift */; };
 		253597E862E3818C2872E2D6 /* Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E0057BB121AD741EBDDCEB /* Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework */; };
 		7B80431166AFA4F39440F9BC /* Pods_GuessTheSong_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7644CE6151E648BD619850A0 /* Pods_GuessTheSong_Swift.framework */; };
@@ -67,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14112F2E2693803600E5EB38 /* CoreDataX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataX.swift; sourceTree = "<group>"; };
+		14112F30269380BF00E5EB38 /* TrackItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		143EF1932670223400FB47C1 /* GuessTheSong_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheSong_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		143EF1962670223400FB47C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		143EF1982670223400FB47C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,8 +110,6 @@
 		14DC95F9268801BA003C6B12 /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
 		14DC960B268A738F003C6B12 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		14DC9663268D163A003C6B12 /* TrackItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		14DC9679268D1876003C6B12 /* TrackItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TrackItem+CoreDataClass.swift"; path = "../../../../../.Trash/TrackItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		14DC9688268D3337003C6B12 /* CoreDataX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataX.swift; path = ../../../../.Trash/CoreDataX.swift; sourceTree = "<group>"; };
 		14DC96A22690014B003C6B12 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		461AF13B4FAA57112DB8B63B /* Pods_GuessTheSong_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheSong_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		569FF7CE9DD6BA36E4766BC5 /* Pods-GuessTheSong_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheSong_Swift.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheSong_Swift/Pods-GuessTheSong_Swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,9 +276,9 @@
 		143EF28A26780F4300FB47C1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				14DC9688268D3337003C6B12 /* CoreDataX.swift */,
 				143EF24A267576D600FB47C1 /* GamePlaylist.swift */,
 				14DC96A22690014B003C6B12 /* CustomColor.swift */,
+				14112F2E2693803600E5EB38 /* CoreDataX.swift */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -304,8 +304,8 @@
 		14DC9653268C2644003C6B12 /* TrackItem */ = {
 			isa = PBXGroup;
 			children = (
-				14DC9679268D1876003C6B12 /* TrackItem+CoreDataClass.swift */,
 				14DC9663268D163A003C6B12 /* TrackItem+CoreDataProperties.swift */,
+				14112F30269380BF00E5EB38 /* TrackItem+CoreDataClass.swift */,
 			);
 			path = TrackItem;
 			sourceTree = "<group>";
@@ -564,14 +564,13 @@
 			files = (
 				14769635267B08FA00E1CF61 /* Question.swift in Sources */,
 				143EF2982678524000FB47C1 /* TrackOptionButton.swift in Sources */,
-				14DC967A268D1876003C6B12 /* TrackItem+CoreDataClass.swift in Sources */,
 				143EF26F26770F5500FB47C1 /* SwipeCardViewDataSource.swift in Sources */,
 				143EF1972670223400FB47C1 /* AppDelegate.swift in Sources */,
 				143EF25A2676C81600FB47C1 /* OptionTracks.swift in Sources */,
-				14DC9689268D3337003C6B12 /* CoreDataX.swift in Sources */,
 				143EF22F26741A5000FB47C1 /* Images.swift in Sources */,
 				143EF20D2672CA3700FB47C1 /* Track.swift in Sources */,
 				143EF1EB2671759D00FB47C1 /* AuthSpotify.swift in Sources */,
+				14112F2F2693803600E5EB38 /* CoreDataX.swift in Sources */,
 				143EF1FD2671C00D00FB47C1 /* APISpotify.swift in Sources */,
 				14DC9664268D163A003C6B12 /* TrackItem+CoreDataProperties.swift in Sources */,
 				14DC95FA268801BA003C6B12 /* SoundEffects.swift in Sources */,
@@ -581,6 +580,7 @@
 				1476963A267D6F8800E1CF61 /* StackContainerView.swift in Sources */,
 				143EF2902678101A00FB47C1 /* TrackOptionsView.swift in Sources */,
 				14DC960C268A738F003C6B12 /* FavouritesViewController.swift in Sources */,
+				14112F31269380BF00E5EB38 /* TrackItem+CoreDataClass.swift in Sources */,
 				143EF1992670223400FB47C1 /* SceneDelegate.swift in Sources */,
 				143EF24B267576D600FB47C1 /* GamePlaylist.swift in Sources */,
 				143EF2342674325100FB47C1 /* Genre.swift in Sources */,

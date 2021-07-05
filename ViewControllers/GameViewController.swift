@@ -8,25 +8,26 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
 
     let genre: String
     private lazy var gamePlayList =  GamePlaylist()
     
-    
+    var activityIndicator: UIActivityIndicatorView?
+
     var albumList: [Track] = []
     
     var gameQuestionsArr: [Question] = []
-    //var stackContainer: StackContainerView!
     var stackContainer = StackContainerView()
     
     override func loadView()
     {
         view = UIView()
         view.backgroundColor = .white
-        
         gamePlayList.initializeGame(genre: genre)
+
         
-        delayWithSeconds(5)
+        delayWithSeconds(3)
         {
             self.view.addSubview(self.stackContainer)
             self.configureStackContainer()
@@ -97,13 +98,35 @@ class GameViewController: UIViewController {
         }
     }
     
+//    func startLoading()
+//    {
+//            activityIndicator = UIActivityIndicatorView()
+//            activityIndicator?.center = self.view.center
+//            activityIndicator?.hidesWhenStopped = true
+//            activityIndicator?.style = UIActivityIndicatorView.Style.medium
+//            activityIndicator?.color = .red
+//        self.view.addSubview((activityIndicator)!)
+//            activityIndicator?.startAnimating()
+//                DispatchQueue.main.async {
+//                if let activityIndicator = self.activityIndicator {
+//                   self.view.addSubview(activityIndicator)
+//                   activityIndicator.startAnimating()
+//                }
+//            }
+            //UIApplication.shared.beginIgnoringInteractionEvents()
+      //  }
     
-    //implement alerts
-    func alert()
-    {
-        let alert = UIAlertController(title: "Saved",message:"Added to favs",preferredStyle: .alert)
-        present(alert,animated:true)
-    }
+//    func stopLoading()
+//    {
+//            DispatchQueue.main.async {
+//                self.activityIndicator?.stopAnimating()
+//                self.activityIndicator?.removeFromSuperview()
+//                self.activityIndicator = nil
+//            }
+//            UIApplication.shared.endIgnoringInteractionEvents()
+//        }
+    
+  
     
 
 }
@@ -128,6 +151,8 @@ extension GameViewController: SwipeCardViewDataSource
     {
         return nil
     }
+    
+    
     
     
 }

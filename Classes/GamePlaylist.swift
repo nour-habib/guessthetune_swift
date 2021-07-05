@@ -35,11 +35,7 @@ class GamePlaylist
     
     public func initializeGame(genre:String)
     {
-        //let dispatchGroup = DispatchGroup()
         
-        //dispatchGroup.enter()
-        
-        print("inititializeGame() ")
         var id = String()
         
         if(genre=="rap")
@@ -67,6 +63,12 @@ class GamePlaylist
             case .success(let value):
                 self.albumList = value
                 self.removeNull(arr: self.albumList)
+//                DispatchQueue.main.async{
+//                    self.albumList = value
+//                    self.removeNull(arr: self.albumList)
+//                    //dispatchGroup.leave()
+//                }
+               
             
             case .failure(let error):
                 print(error)

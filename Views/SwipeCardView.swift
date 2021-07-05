@@ -123,17 +123,20 @@ class SwipeCardView: UIView
     {
         if(sender.currentTitle == dataSource?.mainTrack?.name)
         {
+            let card = self
+            
             delegate?.incrementScore()
             
             musicPlayerView.stopPlayer()
             soundEffects.playAchievement()
             
-            let card = self
+        
             delegate?.swipeDidEnd(on: card)
             
         }
         else
         {
+            
             sender.backgroundColor = .red
         }
     }
@@ -164,6 +167,21 @@ class SwipeCardView: UIView
        
         sender.backgroundColor = .red
         CoreData_.createItem(track: (dataSource?.mainTrack)!)
+        showAlert(title: "Saved", msg: "Track saved.")
+        
+    }
+    
+    func showAlert(title: String, msg: String)
+    {
+        let alert = UIAlertController(title: title,message:msg,preferredStyle: .alert)
+        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        window?.rootViewController?.presentedViewController?.present(alert, animated: true, completion: nil)
+        let time = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline:time)
+        {
+            alert.dismiss(animated: true, completion: nil)
+            
+        }
         
     }
 

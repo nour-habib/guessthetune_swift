@@ -71,7 +71,7 @@ class APISpotify
      
         let url = apiURL + "/albums/" + id + "/tracks?market=US&limit=50"
 
-        
+       
         AF.request(url, method: .get, parameters: parameters).responseJSON { (response) in
            // print(response.result)
                 switch response.result {
@@ -85,6 +85,7 @@ class APISpotify
 
                                 tracksArray.append(contentsOf: tracks.items)
                                 completion(.success(tracksArray))
+                               
                         
                             }
                             catch let e
