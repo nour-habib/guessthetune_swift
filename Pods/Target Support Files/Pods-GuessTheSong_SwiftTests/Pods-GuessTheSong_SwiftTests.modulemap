@@ -1,0 +1,6 @@
+framework module Pods_GuessTheSong_SwiftTests {
+  umbrella header "Pods-GuessTheSong_SwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

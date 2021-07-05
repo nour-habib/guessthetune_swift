@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143EF1972670223400FB47C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1962670223400FB47C1 /* AppDelegate.swift */; };
+		143EF1992670223400FB47C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1982670223400FB47C1 /* SceneDelegate.swift */; };
+		143EF19B2670223400FB47C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF19A2670223400FB47C1 /* ContentView.swift */; };
+		143EF19E2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 143EF19C2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodeld */; };
+		143EF1A02670223500FB47C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143EF19F2670223500FB47C1 /* Assets.xcassets */; };
+		143EF1A32670223500FB47C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143EF1A22670223500FB47C1 /* Preview Assets.xcassets */; };
+		143EF1A62670223500FB47C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143EF1A42670223500FB47C1 /* LaunchScreen.storyboard */; };
+		143EF1B12670223600FB47C1 /* GuessTheSong_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1B02670223600FB47C1 /* GuessTheSong_SwiftTests.swift */; };
+		143EF1BC2670223600FB47C1 /* GuessTheSong_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1BB2670223600FB47C1 /* GuessTheSong_SwiftUITests.swift */; };
+		143EF1D32670461200FB47C1 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143EF1D22670461200FB47C1 /* SpotifyiOS.framework */; };
+		143EF1E1267055A500FB47C1 /* GenreSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1E0267055A500FB47C1 /* GenreSelectionViewController.swift */; };
+		143EF1EB2671759D00FB47C1 /* AuthSpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1EA2671759D00FB47C1 /* AuthSpotify.swift */; };
+		143EF1FD2671C00D00FB47C1 /* APISpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF1FC2671C00D00FB47C1 /* APISpotify.swift */; };
+		143EF2082672B17700FB47C1 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2072672B17700FB47C1 /* Album.swift */; };
+		143EF20D2672CA3700FB47C1 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF20C2672CA3700FB47C1 /* Track.swift */; };
+		143EF2122672CB8900FB47C1 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2112672CB8900FB47C1 /* Artist.swift */; };
+		143EF22F26741A5000FB47C1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF22E26741A5000FB47C1 /* Images.swift */; };
+		143EF2342674325100FB47C1 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2332674325100FB47C1 /* Genre.swift */; };
+		143EF241267444EF00FB47C1 /* GenreButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF240267444EF00FB47C1 /* GenreButtonView.swift */; };
+		143EF246267475BC00FB47C1 /* GenreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF245267475BC00FB47C1 /* GenreButton.swift */; };
+		143EF24B267576D600FB47C1 /* GamePlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF24A267576D600FB47C1 /* GamePlaylist.swift */; };
+		143EF25A2676C81600FB47C1 /* OptionTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2592676C81600FB47C1 /* OptionTracks.swift */; };
+		143EF2622676CDEE00FB47C1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2612676CDEE00FB47C1 /* GameViewController.swift */; };
+		143EF2672676CDFD00FB47C1 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2662676CDFD00FB47C1 /* MusicPlayerView.swift */; };
+		143EF26F26770F5500FB47C1 /* SwipeCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF26E26770F5500FB47C1 /* SwipeCardViewDataSource.swift */; };
+		143EF2742677136300FB47C1 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2732677136300FB47C1 /* SwipeCardView.swift */; };
+		143EF2902678101A00FB47C1 /* TrackOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF28F2678101A00FB47C1 /* TrackOptionsView.swift */; };
+		143EF2982678524000FB47C1 /* TrackOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2972678524000FB47C1 /* TrackOptionButton.swift */; };
+		14769635267B08FA00E1CF61 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14769634267B08FA00E1CF61 /* Question.swift */; };
+		1476963A267D6F8800E1CF61 /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14769639267D6F8800E1CF61 /* StackContainerView.swift */; };
+		14DC95F52688017E003C6B12 /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14DC95F42688017E003C6B12 /* achievement.wav */; };
+		14DC95FA268801BA003C6B12 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC95F9268801BA003C6B12 /* SoundEffects.swift */; };
+		14DC960C268A738F003C6B12 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC960B268A738F003C6B12 /* FavouritesViewController.swift */; };
+		14DC9664268D163A003C6B12 /* TrackItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC9663268D163A003C6B12 /* TrackItem+CoreDataProperties.swift */; };
+		14DC967A268D1876003C6B12 /* TrackItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC9679268D1876003C6B12 /* TrackItem+CoreDataClass.swift */; };
+		14DC9689268D3337003C6B12 /* CoreDataX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC9688268D3337003C6B12 /* CoreDataX.swift */; };
+		14DC96A32690014B003C6B12 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC96A22690014B003C6B12 /* CustomColor.swift */; };
+		253597E862E3818C2872E2D6 /* Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E0057BB121AD741EBDDCEB /* Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework */; };
+		7B80431166AFA4F39440F9BC /* Pods_GuessTheSong_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7644CE6151E648BD619850A0 /* Pods_GuessTheSong_Swift.framework */; };
+		F25283B2CBF5377CB01B60C9 /* Pods_GuessTheSong_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461AF13B4FAA57112DB8B63B /* Pods_GuessTheSong_SwiftTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		143EF1AD2670223500FB47C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 143EF18B2670223400FB47C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143EF1922670223400FB47C1;
+			remoteInfo = GuessTheSong_Swift;
+		};
+		143EF1B82670223600FB47C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 143EF18B2670223400FB47C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143EF1922670223400FB47C1;
+			remoteInfo = GuessTheSong_Swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		143EF1932670223400FB47C1 /* GuessTheSong_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheSong_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		143EF1962670223400FB47C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		143EF1982670223400FB47C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		143EF19A2670223400FB47C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		143EF19D2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuessTheSong_Swift.xcdatamodel; sourceTree = "<group>"; };
+		143EF19F2670223500FB47C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		143EF1A22670223500FB47C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		143EF1A52670223500FB47C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		143EF1A72670223500FB47C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143EF1AC2670223500FB47C1 /* GuessTheSong_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheSong_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		143EF1B02670223600FB47C1 /* GuessTheSong_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheSong_SwiftTests.swift; sourceTree = "<group>"; };
+		143EF1B22670223600FB47C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143EF1B72670223600FB47C1 /* GuessTheSong_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheSong_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		143EF1BB2670223600FB47C1 /* GuessTheSong_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheSong_SwiftUITests.swift; sourceTree = "<group>"; };
+		143EF1BD2670223600FB47C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143EF1D1267045DE00FB47C1 /* GuessTheSong_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuessTheSong_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		143EF1D22670461200FB47C1 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		143EF1E0267055A500FB47C1 /* GenreSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionViewController.swift; sourceTree = "<group>"; };
+		143EF1EA2671759D00FB47C1 /* AuthSpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSpotify.swift; sourceTree = "<group>"; };
+		143EF1FC2671C00D00FB47C1 /* APISpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISpotify.swift; sourceTree = "<group>"; };
+		143EF2072672B17700FB47C1 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		143EF20C2672CA3700FB47C1 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		143EF2112672CB8900FB47C1 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		143EF22E26741A5000FB47C1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		143EF2332674325100FB47C1 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		143EF240267444EF00FB47C1 /* GenreButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonView.swift; sourceTree = "<group>"; };
+		143EF245267475BC00FB47C1 /* GenreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButton.swift; sourceTree = "<group>"; };
+		143EF24A267576D600FB47C1 /* GamePlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlaylist.swift; sourceTree = "<group>"; };
+		143EF2592676C81600FB47C1 /* OptionTracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTracks.swift; sourceTree = "<group>"; };
+		143EF2612676CDEE00FB47C1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		143EF2662676CDFD00FB47C1 /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
+		143EF26E26770F5500FB47C1 /* SwipeCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardViewDataSource.swift; sourceTree = "<group>"; };
+		143EF2732677136300FB47C1 /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
+		143EF28F2678101A00FB47C1 /* TrackOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOptionsView.swift; sourceTree = "<group>"; };
+		143EF2972678524000FB47C1 /* TrackOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOptionButton.swift; sourceTree = "<group>"; };
+		14769634267B08FA00E1CF61 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		14769639267D6F8800E1CF61 /* StackContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
+		14DC95F42688017E003C6B12 /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
+		14DC95F9268801BA003C6B12 /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		14DC960B268A738F003C6B12 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		14DC9663268D163A003C6B12 /* TrackItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		14DC9679268D1876003C6B12 /* TrackItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TrackItem+CoreDataClass.swift"; path = "../../../../../.Trash/TrackItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		14DC9688268D3337003C6B12 /* CoreDataX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataX.swift; path = ../../../../.Trash/CoreDataX.swift; sourceTree = "<group>"; };
+		14DC96A22690014B003C6B12 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		461AF13B4FAA57112DB8B63B /* Pods_GuessTheSong_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheSong_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		569FF7CE9DD6BA36E4766BC5 /* Pods-GuessTheSong_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheSong_Swift.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheSong_Swift/Pods-GuessTheSong_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		60E0057BB121AD741EBDDCEB /* Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7644CE6151E648BD619850A0 /* Pods_GuessTheSong_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheSong_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		805971A15529AEB5E3056385 /* Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B35169062A7F7CB10B2F239E /* Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B907933A60D4B4FB3E0CB255 /* Pods-GuessTheSong_SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheSong_SwiftTests.release.xcconfig"; path = "Target Support Files/Pods-GuessTheSong_SwiftTests/Pods-GuessTheSong_SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		C581C6ECB4FB47CD6F2ECE73 /* Pods-GuessTheSong_SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheSong_SwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheSong_SwiftTests/Pods-GuessTheSong_SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3BC5678E136D83B7727E986 /* Pods-GuessTheSong_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheSong_Swift.release.xcconfig"; path = "Target Support Files/Pods-GuessTheSong_Swift/Pods-GuessTheSong_Swift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143EF1902670223400FB47C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143EF1D32670461200FB47C1 /* SpotifyiOS.framework in Frameworks */,
+				7B80431166AFA4F39440F9BC /* Pods_GuessTheSong_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143EF1A92670223500FB47C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25283B2CBF5377CB01B60C9 /* Pods_GuessTheSong_SwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143EF1B42670223600FB47C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253597E862E3818C2872E2D6 /* Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038CDD8FC163EBF07D8CF055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7644CE6151E648BD619850A0 /* Pods_GuessTheSong_Swift.framework */,
+				60E0057BB121AD741EBDDCEB /* Pods_GuessTheSong_Swift_GuessTheSong_SwiftUITests.framework */,
+				461AF13B4FAA57112DB8B63B /* Pods_GuessTheSong_SwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		143EF18A2670223400FB47C1 = {
+			isa = PBXGroup;
+			children = (
+				143EF1D1267045DE00FB47C1 /* GuessTheSong_Swift-Bridging-Header.h */,
+				143EF1952670223400FB47C1 /* GuessTheSong_Swift */,
+				143EF1AF2670223500FB47C1 /* GuessTheSong_SwiftTests */,
+				143EF1BA2670223600FB47C1 /* GuessTheSong_SwiftUITests */,
+				143EF1942670223400FB47C1 /* Products */,
+				E8AFE54EC32E3C934ED8E03D /* Pods */,
+				038CDD8FC163EBF07D8CF055 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		143EF1942670223400FB47C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				143EF1932670223400FB47C1 /* GuessTheSong_Swift.app */,
+				143EF1AC2670223500FB47C1 /* GuessTheSong_SwiftTests.xctest */,
+				143EF1B72670223600FB47C1 /* GuessTheSong_SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		143EF1952670223400FB47C1 /* GuessTheSong_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				143EF1962670223400FB47C1 /* AppDelegate.swift */,
+				143EF1982670223400FB47C1 /* SceneDelegate.swift */,
+				14DC95F9268801BA003C6B12 /* SoundEffects.swift */,
+				143EF19A2670223400FB47C1 /* ContentView.swift */,
+				14DC9653268C2644003C6B12 /* TrackItem */,
+				143EF28926780EDF00FB47C1 /* Spotify */,
+				143EF28A26780F4300FB47C1 /* Classes */,
+				143EF28826780E5E00FB47C1 /* Views */,
+				143EF28726780E1200FB47C1 /* Models */,
+				143EF28B26780F5600FB47C1 /* ViewControllers */,
+				143EF26E26770F5500FB47C1 /* SwipeCardViewDataSource.swift */,
+				14DC9616268AB42E003C6B12 /* Sound Clips */,
+				143EF1A72670223500FB47C1 /* Info.plist */,
+				143EF1A12670223500FB47C1 /* Preview Content */,
+				143EF19C2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodeld */,
+				143EF1D22670461200FB47C1 /* SpotifyiOS.framework */,
+				143EF1A42670223500FB47C1 /* LaunchScreen.storyboard */,
+				143EF19F2670223500FB47C1 /* Assets.xcassets */,
+			);
+			path = GuessTheSong_Swift;
+			sourceTree = "<group>";
+		};
+		143EF1A12670223500FB47C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				143EF1A22670223500FB47C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		143EF1AF2670223500FB47C1 /* GuessTheSong_SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				143EF1B02670223600FB47C1 /* GuessTheSong_SwiftTests.swift */,
+				143EF1B22670223600FB47C1 /* Info.plist */,
+			);
+			path = GuessTheSong_SwiftTests;
+			sourceTree = "<group>";
+		};
+		143EF1BA2670223600FB47C1 /* GuessTheSong_SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				143EF1BB2670223600FB47C1 /* GuessTheSong_SwiftUITests.swift */,
+				143EF1BD2670223600FB47C1 /* Info.plist */,
+			);
+			path = GuessTheSong_SwiftUITests;
+			sourceTree = "<group>";
+		};
+		143EF28726780E1200FB47C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				143EF2112672CB8900FB47C1 /* Artist.swift */,
+				14769634267B08FA00E1CF61 /* Question.swift */,
+				143EF22E26741A5000FB47C1 /* Images.swift */,
+				143EF2332674325100FB47C1 /* Genre.swift */,
+				143EF2592676C81600FB47C1 /* OptionTracks.swift */,
+				143EF20C2672CA3700FB47C1 /* Track.swift */,
+				143EF2072672B17700FB47C1 /* Album.swift */,
+			);
+			name = Models;
+			path = GuessTheSong_Swift/Models;
+			sourceTree = SOURCE_ROOT;
+		};
+		143EF28826780E5E00FB47C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				143EF245267475BC00FB47C1 /* GenreButton.swift */,
+				143EF240267444EF00FB47C1 /* GenreButtonView.swift */,
+				143EF2662676CDFD00FB47C1 /* MusicPlayerView.swift */,
+				143EF28F2678101A00FB47C1 /* TrackOptionsView.swift */,
+				143EF2972678524000FB47C1 /* TrackOptionButton.swift */,
+				143EF2732677136300FB47C1 /* SwipeCardView.swift */,
+				14769639267D6F8800E1CF61 /* StackContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		143EF28926780EDF00FB47C1 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				143EF1EA2671759D00FB47C1 /* AuthSpotify.swift */,
+				143EF1FC2671C00D00FB47C1 /* APISpotify.swift */,
+			);
+			path = Spotify;
+			sourceTree = SOURCE_ROOT;
+		};
+		143EF28A26780F4300FB47C1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14DC9688268D3337003C6B12 /* CoreDataX.swift */,
+				143EF24A267576D600FB47C1 /* GamePlaylist.swift */,
+				14DC96A22690014B003C6B12 /* CustomColor.swift */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		143EF28B26780F5600FB47C1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				143EF1E0267055A500FB47C1 /* GenreSelectionViewController.swift */,
+				143EF2612676CDEE00FB47C1 /* GameViewController.swift */,
+				14DC960B268A738F003C6B12 /* FavouritesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		14DC9616268AB42E003C6B12 /* Sound Clips */ = {
+			isa = PBXGroup;
+			children = (
+				14DC95F42688017E003C6B12 /* achievement.wav */,
+			);
+			path = "Sound Clips";
+			sourceTree = SOURCE_ROOT;
+		};
+		14DC9653268C2644003C6B12 /* TrackItem */ = {
+			isa = PBXGroup;
+			children = (
+				14DC9679268D1876003C6B12 /* TrackItem+CoreDataClass.swift */,
+				14DC9663268D163A003C6B12 /* TrackItem+CoreDataProperties.swift */,
+			);
+			path = TrackItem;
+			sourceTree = "<group>";
+		};
+		E8AFE54EC32E3C934ED8E03D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				569FF7CE9DD6BA36E4766BC5 /* Pods-GuessTheSong_Swift.debug.xcconfig */,
+				F3BC5678E136D83B7727E986 /* Pods-GuessTheSong_Swift.release.xcconfig */,
+				B35169062A7F7CB10B2F239E /* Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.debug.xcconfig */,
+				805971A15529AEB5E3056385 /* Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.release.xcconfig */,
+				C581C6ECB4FB47CD6F2ECE73 /* Pods-GuessTheSong_SwiftTests.debug.xcconfig */,
+				B907933A60D4B4FB3E0CB255 /* Pods-GuessTheSong_SwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143EF1922670223400FB47C1 /* GuessTheSong_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143EF1C02670223600FB47C1 /* Build configuration list for PBXNativeTarget "GuessTheSong_Swift" */;
+			buildPhases = (
+				350F1FD66D826AA63BD491B3 /* [CP] Check Pods Manifest.lock */,
+				143EF18F2670223400FB47C1 /* Sources */,
+				143EF1902670223400FB47C1 /* Frameworks */,
+				143EF1912670223400FB47C1 /* Resources */,
+				9ABA235EDC3BD2DDE7F0BD9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuessTheSong_Swift;
+			productName = GuessTheSong_Swift;
+			productReference = 143EF1932670223400FB47C1 /* GuessTheSong_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		143EF1AB2670223500FB47C1 /* GuessTheSong_SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143EF1C32670223600FB47C1 /* Build configuration list for PBXNativeTarget "GuessTheSong_SwiftTests" */;
+			buildPhases = (
+				6B0E04997CC29458F07A273C /* [CP] Check Pods Manifest.lock */,
+				143EF1A82670223500FB47C1 /* Sources */,
+				143EF1A92670223500FB47C1 /* Frameworks */,
+				143EF1AA2670223500FB47C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				143EF1AE2670223500FB47C1 /* PBXTargetDependency */,
+			);
+			name = GuessTheSong_SwiftTests;
+			productName = GuessTheSong_SwiftTests;
+			productReference = 143EF1AC2670223500FB47C1 /* GuessTheSong_SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		143EF1B62670223600FB47C1 /* GuessTheSong_SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143EF1C62670223600FB47C1 /* Build configuration list for PBXNativeTarget "GuessTheSong_SwiftUITests" */;
+			buildPhases = (
+				C9CB8149BE4CE1BCDCA09FC6 /* [CP] Check Pods Manifest.lock */,
+				143EF1B32670223600FB47C1 /* Sources */,
+				143EF1B42670223600FB47C1 /* Frameworks */,
+				143EF1B52670223600FB47C1 /* Resources */,
+				55C9FA33F13AA0FD86FF165E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				143EF1B92670223600FB47C1 /* PBXTargetDependency */,
+			);
+			name = GuessTheSong_SwiftUITests;
+			productName = GuessTheSong_SwiftUITests;
+			productReference = 143EF1B72670223600FB47C1 /* GuessTheSong_SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		143EF18B2670223400FB47C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					143EF1922670223400FB47C1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					143EF1AB2670223500FB47C1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 143EF1922670223400FB47C1;
+					};
+					143EF1B62670223600FB47C1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 143EF1922670223400FB47C1;
+					};
+				};
+			};
+			buildConfigurationList = 143EF18E2670223400FB47C1 /* Build configuration list for PBXProject "GuessTheSong_Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 143EF18A2670223400FB47C1;
+			productRefGroup = 143EF1942670223400FB47C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				143EF1922670223400FB47C1 /* GuessTheSong_Swift */,
+				143EF1AB2670223500FB47C1 /* GuessTheSong_SwiftTests */,
+				143EF1B62670223600FB47C1 /* GuessTheSong_SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		143EF1912670223400FB47C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143EF1A62670223500FB47C1 /* LaunchScreen.storyboard in Resources */,
+				143EF1A32670223500FB47C1 /* Preview Assets.xcassets in Resources */,
+				14DC95F52688017E003C6B12 /* achievement.wav in Resources */,
+				143EF1A02670223500FB47C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143EF1AA2670223500FB47C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143EF1B52670223600FB47C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		350F1FD66D826AA63BD491B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessTheSong_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55C9FA33F13AA0FD86FF165E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B0E04997CC29458F07A273C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessTheSong_SwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ABA235EDC3BD2DDE7F0BD9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheSong_Swift/Pods-GuessTheSong_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheSong_Swift/Pods-GuessTheSong_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessTheSong_Swift/Pods-GuessTheSong_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9CB8149BE4CE1BCDCA09FC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		143EF18F2670223400FB47C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14769635267B08FA00E1CF61 /* Question.swift in Sources */,
+				143EF2982678524000FB47C1 /* TrackOptionButton.swift in Sources */,
+				14DC967A268D1876003C6B12 /* TrackItem+CoreDataClass.swift in Sources */,
+				143EF26F26770F5500FB47C1 /* SwipeCardViewDataSource.swift in Sources */,
+				143EF1972670223400FB47C1 /* AppDelegate.swift in Sources */,
+				143EF25A2676C81600FB47C1 /* OptionTracks.swift in Sources */,
+				14DC9689268D3337003C6B12 /* CoreDataX.swift in Sources */,
+				143EF22F26741A5000FB47C1 /* Images.swift in Sources */,
+				143EF20D2672CA3700FB47C1 /* Track.swift in Sources */,
+				143EF1EB2671759D00FB47C1 /* AuthSpotify.swift in Sources */,
+				143EF1FD2671C00D00FB47C1 /* APISpotify.swift in Sources */,
+				14DC9664268D163A003C6B12 /* TrackItem+CoreDataProperties.swift in Sources */,
+				14DC95FA268801BA003C6B12 /* SoundEffects.swift in Sources */,
+				143EF1E1267055A500FB47C1 /* GenreSelectionViewController.swift in Sources */,
+				143EF2622676CDEE00FB47C1 /* GameViewController.swift in Sources */,
+				143EF2082672B17700FB47C1 /* Album.swift in Sources */,
+				1476963A267D6F8800E1CF61 /* StackContainerView.swift in Sources */,
+				143EF2902678101A00FB47C1 /* TrackOptionsView.swift in Sources */,
+				14DC960C268A738F003C6B12 /* FavouritesViewController.swift in Sources */,
+				143EF1992670223400FB47C1 /* SceneDelegate.swift in Sources */,
+				143EF24B267576D600FB47C1 /* GamePlaylist.swift in Sources */,
+				143EF2342674325100FB47C1 /* Genre.swift in Sources */,
+				143EF2742677136300FB47C1 /* SwipeCardView.swift in Sources */,
+				143EF19E2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodeld in Sources */,
+				143EF19B2670223400FB47C1 /* ContentView.swift in Sources */,
+				143EF246267475BC00FB47C1 /* GenreButton.swift in Sources */,
+				143EF241267444EF00FB47C1 /* GenreButtonView.swift in Sources */,
+				143EF2672676CDFD00FB47C1 /* MusicPlayerView.swift in Sources */,
+				143EF2122672CB8900FB47C1 /* Artist.swift in Sources */,
+				14DC96A32690014B003C6B12 /* CustomColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143EF1A82670223500FB47C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143EF1B12670223600FB47C1 /* GuessTheSong_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143EF1B32670223600FB47C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143EF1BC2670223600FB47C1 /* GuessTheSong_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		143EF1AE2670223500FB47C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 143EF1922670223400FB47C1 /* GuessTheSong_Swift */;
+			targetProxy = 143EF1AD2670223500FB47C1 /* PBXContainerItemProxy */;
+		};
+		143EF1B92670223600FB47C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 143EF1922670223400FB47C1 /* GuessTheSong_Swift */;
+			targetProxy = 143EF1B82670223600FB47C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		143EF1A42670223500FB47C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143EF1A52670223500FB47C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		143EF1BE2670223600FB47C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "GuessTheSong_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		143EF1BF2670223600FB47C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "GuessTheSong_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		143EF1C12670223600FB47C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569FF7CE9DD6BA36E4766BC5 /* Pods-GuessTheSong_Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GuessTheSong_Swift/Preview Content\"";
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GuessTheSong_Swift",
+				);
+				INFOPLIST_FILE = GuessTheSong_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nhabib.GuessTheSong-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		143EF1C22670223600FB47C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BC5678E136D83B7727E986 /* Pods-GuessTheSong_Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GuessTheSong_Swift/Preview Content\"";
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GuessTheSong_Swift",
+				);
+				INFOPLIST_FILE = GuessTheSong_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nhabib.GuessTheSong-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		143EF1C42670223600FB47C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C581C6ECB4FB47CD6F2ECE73 /* Pods-GuessTheSong_SwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				INFOPLIST_FILE = GuessTheSong_SwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nhabib.GuessTheSong-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessTheSong_Swift.app/GuessTheSong_Swift";
+			};
+			name = Debug;
+		};
+		143EF1C52670223600FB47C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B907933A60D4B4FB3E0CB255 /* Pods-GuessTheSong_SwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				INFOPLIST_FILE = GuessTheSong_SwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nhabib.GuessTheSong-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessTheSong_Swift.app/GuessTheSong_Swift";
+			};
+			name = Release;
+		};
+		143EF1C72670223600FB47C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35169062A7F7CB10B2F239E /* Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				INFOPLIST_FILE = GuessTheSong_SwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nhabib.GuessTheSong-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuessTheSong_Swift;
+			};
+			name = Debug;
+		};
+		143EF1C82670223600FB47C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805971A15529AEB5E3056385 /* Pods-GuessTheSong_Swift-GuessTheSong_SwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				INFOPLIST_FILE = GuessTheSong_SwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nhabib.GuessTheSong-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuessTheSong_Swift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143EF18E2670223400FB47C1 /* Build configuration list for PBXProject "GuessTheSong_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143EF1BE2670223600FB47C1 /* Debug */,
+				143EF1BF2670223600FB47C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143EF1C02670223600FB47C1 /* Build configuration list for PBXNativeTarget "GuessTheSong_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143EF1C12670223600FB47C1 /* Debug */,
+				143EF1C22670223600FB47C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143EF1C32670223600FB47C1 /* Build configuration list for PBXNativeTarget "GuessTheSong_SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143EF1C42670223600FB47C1 /* Debug */,
+				143EF1C52670223600FB47C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143EF1C62670223600FB47C1 /* Build configuration list for PBXNativeTarget "GuessTheSong_SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143EF1C72670223600FB47C1 /* Debug */,
+				143EF1C82670223600FB47C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		143EF19C2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				143EF19D2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodel */,
+			);
+			currentVersion = 143EF19D2670223400FB47C1 /* GuessTheSong_Swift.xcdatamodel */;
+			path = GuessTheSong_Swift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 143EF18B2670223400FB47C1 /* Project object */;
+}
