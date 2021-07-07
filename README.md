@@ -8,4 +8,4 @@ More features to be added
 
 SwipeCard code adapted from: https://exploringswift.com/blog/making-a-tinder-esque-card-swiping-interface-using-swift
 
-![app]()
+![app](https://github.com/nour-habib/guessthetune_swift/blob/master/vid.gif?raw=true)
