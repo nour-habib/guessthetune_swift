@@ -23,82 +23,77 @@ class APISpotify
     {
         
         var searchResults = [Album]()
-        let parameters = ["client_id" : Auth.clientID,
-                          "access_token": UserDefaults.standard.string(forKey: "token"),
-                          "client_secret" : Auth.clientSecret,
-                                   "grant_type" : "client_credentials"]
-     
-        
+       
         let q = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
         
-        AF.request("https://api.spotify.com/v1/search?q="+q+"&type=album&market=us&limit=10&include_external=false", method: .get, parameters: parameters).responseJSON { (response) in
-            //print(response.result)
-                switch response.result {
-                    case .success:
-                        if let jsonData = response.data
-                        {
-                            let jsonDecoder = JSONDecoder()
-                            do{
-                                let albums = try jsonDecoder.decode(Root.self,from:jsonData)
-            
-                                searchResults.append(contentsOf: albums.albums.items)
-                                //print(searchResults.count)
-                                completion(.success(searchResults))
-                        
-                            }
-                            catch let e
-                            {
-                                print("error \(e)")
-                            }
-                            
-                        }
-                       
-                    case .failure(_): break
-
-                                }
-        }
+        guard let url = URL(string:apiURL+"/search?q="+q+"&type=album&market=us&limit=10&include_external=false") else {return}
         
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        
+        guard let token = UserDefaults.standard.string(forKey:"token") else {return}
+        
+        urlRequest.setValue("Bearer \(token)",forHTTPHeaderField: "Authorization")
+        
+        let urlSession = URLSession.shared.dataTask(with: urlRequest){data, response, error in
+            guard let data = data, error == nil else
+            {
+                //completion(.failure(error))
+                print("erro")
+                return
+            }
+            
+            let jsonDecoder = JSONDecoder()
+            do
+            {
+                let albums = try jsonDecoder.decode(Root.self,from:data)
+                searchResults.append(contentsOf: albums.albums.items)
+                completion(.success(searchResults))
+            }
+            catch let e
+            {
+                print("error \(e)")
+            }
+        }
+        urlSession.resume()
     }
     
     public func getAlbumList(id: String,completion: @escaping (Result<[Track],Error>) -> Void)
     {
         var tracksArray = [Track]()
         
-        let parameters = ["client_id" : Auth.clientID,
-                          "access_token": UserDefaults.standard.string(forKey: "token"),
-                          "client_secret" : Auth.clientSecret,
-                                   "grant_type" : "client_credentials"]
-     
-        let url = apiURL + "/albums/" + id + "/tracks?market=US&limit=50"
-
-       
-        AF.request(url, method: .get, parameters: parameters).responseJSON { (response) in
-           // print(response.result)
-                switch response.result {
-                    case .success:
-                        if let jsonData = response.data
-                        {
-                            let jsonDecoder = JSONDecoder()
-                            do{
-                                
-                                let tracks = try jsonDecoder.decode(TrackRoot.self,from:jsonData)
-
-                                tracksArray.append(contentsOf: tracks.items)
-                                completion(.success(tracksArray))
-                               
-                        
-                            }
-                            catch let e
-                            {
-                                print("error \(e)")
-                            }
-                            
-                        }
-                       
-                    case .failure(_): break
-
-                    }
+        let api_url = apiURL + "/albums/" + id + "/tracks?market=US&limit=50"
+        
+        guard let url = URL(string: api_url) else {return}
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        
+        guard let token = UserDefaults.standard.string(forKey:"token") else {return}
+        
+        urlRequest.setValue("Bearer \(token)",forHTTPHeaderField: "Authorization")
+        
+        let urlSession = URLSession.shared.dataTask(with: urlRequest){data, response, error in
+            guard let data = data, error == nil else
+            {
+                //completion(.failure(error))
+                print("erro")
+                return
+            }
+            
+            let jsonDecoder = JSONDecoder()
+            do
+            {
+                let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
+                tracksArray.append(contentsOf: tracks.items)
+                completion(.success(tracksArray))
+            }
+            catch let e
+            {
+                print("error \(e)")
+            }
         }
+        urlSession.resume()
+        
     }
     
 }
