@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 
 class APISpotify
 {
@@ -39,7 +38,7 @@ class APISpotify
             guard let data = data, error == nil else
             {
                 //completion(.failure(error))
-                print("erro")
+                print("error")
                 return
             }
             
@@ -67,33 +66,56 @@ class APISpotify
         guard let url = URL(string: api_url) else {return}
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
+        urlRequest.cachePolicy = .returnCacheDataElseLoad
+        
         
         guard let token = UserDefaults.standard.string(forKey:"token") else {return}
-        
         urlRequest.setValue("Bearer \(token)",forHTTPHeaderField: "Authorization")
         
-        let urlSession = URLSession.shared.dataTask(with: urlRequest){data, response, error in
-            guard let data = data, error == nil else
-            {
-                //completion(.failure(error))
-                print("erro")
-                return
-            }
-            
-            let jsonDecoder = JSONDecoder()
+        let jsonDecoder = JSONDecoder()
+        
+        //Load from cache if available
+        if let data = cache.cachedResponse(for: urlRequest)?.data
+        {
             do
             {
                 let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
                 tracksArray.append(contentsOf: tracks.items)
+                
+                //cache.removeCachedResponse(for: urlRequest) //test cache
+                
                 completion(.success(tracksArray))
             }
             catch let e
             {
-                print("error \(e)")
+                print("urlcache error \(e)")
+                
             }
         }
-        urlSession.resume()
-        
+        else
+        {
+            let urlSession = URLSession.shared.dataTask(with: urlRequest){ data, response, error in
+                guard let data = data, error == nil else
+                {
+                    //completion(.failure(error))
+                    print("erro")
+                    return
+                }
+                
+                do
+                {
+                    let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
+                    tracksArray.append(contentsOf: tracks.items)
+                    completion(.success(tracksArray))
+                }
+                catch let e
+                {
+                    print("error \(e)")
+                }
+            }
+            urlSession.resume()
+            
+        }
     }
     
 }

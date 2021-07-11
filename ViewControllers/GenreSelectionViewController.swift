@@ -22,9 +22,7 @@ class GenreSelectionViewController: UIViewController{
         
         genreButtonView = GenreButtonView()
        genreButtonView.frame = view.bounds
-       // genreButtonView.center = self.view.center
-        
-
+    
         self.view.addSubview(genreButtonView)
         self.title = "Select Genre"
         
@@ -48,38 +46,28 @@ class GenreSelectionViewController: UIViewController{
     
     @objc func selectRap(_ sender:UIButton)
     {
-        print("Rap button selected")
-        
         start(genre:"rap")
-
     }
     
     @objc func selectRnb(_ sender:UIButton)
     {
-        print("Rnb button selected")
         start(genre:"rnb")
-        
     }
     
     @objc func selectRock(_ sender:UIButton)
     {
-        print("Rock button selected")
         start(genre:"rock")
-        
     }
     
     @objc func selectPop(_ sender:UIButton)
     {
-        print("Pop button selected")
         start(genre:"pop")
-        
     }
     
     
     func start(genre: String)
     {
         initializeTabBar(genre: genre)
-        
     }
     
     func initializeTabBar(genre:String)

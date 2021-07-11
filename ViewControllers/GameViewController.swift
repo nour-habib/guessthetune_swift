@@ -27,7 +27,7 @@ class GameViewController: UIViewController {
         gamePlayList.initializeGame(genre: genre)
 
         
-        delayWithSeconds(3)
+        delayWithSeconds(2)
         {
             self.view.addSubview(self.stackContainer)
             self.configureStackContainer()

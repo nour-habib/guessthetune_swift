@@ -63,12 +63,6 @@ class GamePlaylist
             case .success(let value):
                 self.albumList = value
                 self.removeNull(arr: self.albumList)
-//                DispatchQueue.main.async{
-//                    self.albumList = value
-//                    self.removeNull(arr: self.albumList)
-//                    //dispatchGroup.leave()
-//                }
-               
             
             case .failure(let error):
                 print(error)
@@ -83,7 +77,6 @@ class GamePlaylist
         {
             if (track.preview_url != "<null>" || track.preview_url != "")
             {
-                
                 newArr.append(track)
             }
         }
@@ -100,7 +93,6 @@ class GamePlaylist
             let mainTrack = tracksArr.randomElement()
             
             let optionTracks1 = OptionTracks(optA:mainTrack!,optB:tracksArr.randomElement()!,optC:tracksArr.randomElement()!,optD: tracksArr.randomElement()!)
-            
             
             let optionTracks2 = OptionTracks(optA:tracksArr.randomElement()!,optB:mainTrack!,optC:tracksArr.randomElement()!,optD: tracksArr.randomElement()!)
             

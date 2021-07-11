@@ -39,6 +39,7 @@
 		143EF2982678524000FB47C1 /* TrackOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2972678524000FB47C1 /* TrackOptionButton.swift */; };
 		14769635267B08FA00E1CF61 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14769634267B08FA00E1CF61 /* Question.swift */; };
 		1476963A267D6F8800E1CF61 /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14769639267D6F8800E1CF61 /* StackContainerView.swift */; };
+		14A7C8F4269A552200C104E5 /* TrackContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C8F3269A552200C104E5 /* TrackContainer.swift */; };
 		14DC95F52688017E003C6B12 /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14DC95F42688017E003C6B12 /* achievement.wav */; };
 		14DC95FA268801BA003C6B12 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC95F9268801BA003C6B12 /* SoundEffects.swift */; };
 		14DC960C268A738F003C6B12 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC960B268A738F003C6B12 /* FavouritesViewController.swift */; };
@@ -106,6 +107,7 @@
 		143EF2972678524000FB47C1 /* TrackOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOptionButton.swift; sourceTree = "<group>"; };
 		14769634267B08FA00E1CF61 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		14769639267D6F8800E1CF61 /* StackContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
+		14A7C8F3269A552200C104E5 /* TrackContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackContainer.swift; sourceTree = "<group>"; };
 		14DC95F42688017E003C6B12 /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
 		14DC95F9268801BA003C6B12 /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
 		14DC960B268A738F003C6B12 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				143EF24A267576D600FB47C1 /* GamePlaylist.swift */,
 				14DC96A22690014B003C6B12 /* CustomColor.swift */,
 				14112F2E2693803600E5EB38 /* CoreDataX.swift */,
+				14A7C8F3269A552200C104E5 /* TrackContainer.swift */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -286,8 +289,8 @@
 		143EF28B26780F5600FB47C1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				143EF1E0267055A500FB47C1 /* GenreSelectionViewController.swift */,
 				143EF2612676CDEE00FB47C1 /* GameViewController.swift */,
+				143EF1E0267055A500FB47C1 /* GenreSelectionViewController.swift */,
 				14DC960B268A738F003C6B12 /* FavouritesViewController.swift */,
 			);
 			path = ViewControllers;
@@ -575,6 +578,7 @@
 				14DC9664268D163A003C6B12 /* TrackItem+CoreDataProperties.swift in Sources */,
 				14DC95FA268801BA003C6B12 /* SoundEffects.swift in Sources */,
 				143EF1E1267055A500FB47C1 /* GenreSelectionViewController.swift in Sources */,
+				14A7C8F4269A552200C104E5 /* TrackContainer.swift in Sources */,
 				143EF2622676CDEE00FB47C1 /* GameViewController.swift in Sources */,
 				143EF2082672B17700FB47C1 /* Album.swift in Sources */,
 				1476963A267D6F8800E1CF61 /* StackContainerView.swift in Sources */,

@@ -8,13 +8,8 @@
 import UIKit
 import CoreData
 
-//let authorizeSpotify = AuthSpotify()
-//let apiSpotify = APISpotify()
-
-
 var CoreData_ = CoreDataX()
-
-
+let cache = URLCache.shared
 
 let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
@@ -23,19 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+    {
         // Override point for customization after application launch.
-    
         let window = UIWindow(frame: UIScreen.main.bounds)
-//        let navigationController = UINavigationController(rootViewController: GenreSelectionViewController())
-//        window.rootViewController = navigationController
         window.rootViewController = GenreSelectionViewController()
         
         window.makeKeyAndVisible()
                self.window = window
-        
         
         return true
     }
