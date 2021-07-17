@@ -11,19 +11,17 @@ class GamePlaylist
 {
     static let shared = GamePlaylist()
     
-    //let dispatchGroup = DispatchGroup()
-    
     struct playlistIDs
     {
-        static let rap = "1tIioq32KjWlt5vvk5rhqX"
-        static let pop = "6odcotWv2xd7NP7RrGBS5b"
-        static let rnb = "0QhwxYDUougJiVDtyN4Lhm"
-        static let rock = "5xrx34yrP6lj9NzvBx9PuT"
+        static let rapIds = ["3JdI9IvgSxFM3bttMKPYCC","1tIioq32KjWlt5vvk5rhqX"]
+        static let popIds = ["6odcotWv2xd7NP7RrGBS5b"] //90s
+        static let rnbIds = ["0QhwxYDUougJiVDtyN4Lhm"]
+        static let rockIds = ["5xrx34yrP6lj9NzvBx9PuT"]
     }
     
     let apiSpotify = APISpotify()
 
-    private let playListLength: Int = 20
+    private let playListLength: Int = 10
     private lazy var gameList: [Track] = []
     private lazy var trackOptionsList: [Track] = []
     var questionsArray: [Question] = []
@@ -35,39 +33,52 @@ class GamePlaylist
     
     public func initializeGame(genre:String)
     {
-        
-        var id = String()
+    
+        var ids = [String]()
         
         if(genre=="rap")
         {
-            id = playlistIDs.rap
+            ids = playlistIDs.rapIds
         }
         else if(genre=="rnb")
         {
-            id = playlistIDs.rnb
+            ids = playlistIDs.rnbIds
         }
         else if(genre=="pop")
         {
-            id = playlistIDs.pop
+            ids = playlistIDs.popIds
         }
         else if(genre=="rock")
         {
-            id = playlistIDs.rock
+            ids = playlistIDs.rockIds
         }
     
-        APISpotify.shared.getAlbumList(id: id){
-            result in defer{
-               // dispatchGroup.leave()
+        let dispatch = DispatchGroup()
+        for id in ids
+        {
+            dispatch.enter()
+            APISpotify.shared.getAlbumList(id: id)
+            {
+                result in defer{
+                   // dispatch.leave()
+                }
+                switch result{
+                case .success(let value):
+                    self.albumList.append(contentsOf:value)
+                
+                case .failure(let error):
+                    print(error)
+                }
             }
-            switch result{
-            case .success(let value):
-                self.albumList = value
-                self.removeNull(arr: self.albumList)
+            dispatch.leave()
             
-            case .failure(let error):
-                print(error)
-            }
         }
+        
+        dispatch.notify(queue: .main)
+        {
+            self.removeNull(arr: self.albumList)
+        }
+       
     }
     
     private func removeNull(arr: [Track]) -> Void
@@ -75,7 +86,7 @@ class GamePlaylist
         var newArr: [Track] = []
         for track in arr
         {
-            if (track.preview_url != "<null>" || track.preview_url != "")
+            if (track.preview_url != "<null>" || track.preview_url != "" || track.preview_url != "nil")
             {
                 newArr.append(track)
             }
@@ -107,14 +118,9 @@ class GamePlaylist
             qArr.append(question)
         }
         
-        setQuestions(arr: qArr)
+        self.questionsArray = qArr
     }
-    private func setQuestions(arr:Array<Question>)
-    {
-        self.questionsArray = arr
-
-    }
-    
+   
     public func newGame() -> Array<Question>
     {
         return self.questionsArray

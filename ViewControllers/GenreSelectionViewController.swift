@@ -30,8 +30,7 @@ class GenreSelectionViewController: UIViewController{
         genreButtonView.rnbButton.addTarget(self, action: #selector(selectRnb(_:)), for: .touchUpInside)
         genreButtonView.rockButton.addTarget(self, action: #selector(selectRock(_:)), for: .touchUpInside)
         genreButtonView.popButton.addTarget(self, action: #selector(selectPop(_:)), for: .touchUpInside)
-        
-
+    
     }
 
     /*

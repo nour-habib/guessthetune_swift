@@ -25,13 +25,10 @@ class APISpotify
        
         let q = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
         
-        guard let url = URL(string:apiURL+"/search?q="+q+"&type=album&market=us&limit=10&include_external=false") else {return}
-        
+        guard let url = URL(string:apiURL+"/search?q="+q+"&type=album&market=us&limit=3&include_external=false") else {return}
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
-        
         guard let token = UserDefaults.standard.string(forKey:"token") else {return}
-        
         urlRequest.setValue("Bearer \(token)",forHTTPHeaderField: "Authorization")
         
         let urlSession = URLSession.shared.dataTask(with: urlRequest){data, response, error in
@@ -81,7 +78,6 @@ class APISpotify
             {
                 let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
                 tracksArray.append(contentsOf: tracks.items)
-                
                 //cache.removeCachedResponse(for: urlRequest) //test cache
                 
                 completion(.success(tracksArray))

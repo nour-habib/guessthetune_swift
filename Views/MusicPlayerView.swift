@@ -37,7 +37,9 @@ class MusicPlayerView: UIView
         }
         else
         {
-            audioPlayer = AVPlayer(url: (NSURL(string: url) )! as URL)
+            guard let newURL = URL(string:url) else {return}
+            //print("url: \(newURL)")
+            audioPlayer = AVPlayer(url: newURL)
             audioPlayer?.play()
         }
         
