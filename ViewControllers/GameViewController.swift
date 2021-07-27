@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
     override func loadView()
     {
         view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         gamePlayList.initializeGame(genre: genre)
 
         
@@ -31,7 +31,6 @@ class GameViewController: UIViewController {
         {
             self.view.addSubview(self.stackContainer)
             self.configureStackContainer()
-            self.configureNavigationBarButtonItem()
             self.stackContainer.translatesAutoresizingMaskIntoConstraints = false
             self.gameQuestionsArr = self.gamePlayList.newGame()
             self.stackContainer.dataSource = self
@@ -41,7 +40,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        self.navigationController?.setToolbarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     init(_ genre: String)
@@ -65,29 +65,6 @@ class GameViewController: UIViewController {
         stackContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -60).isActive = true
         stackContainer.widthAnchor.constraint(equalToConstant: w).isActive = true
         stackContainer.heightAnchor.constraint(equalToConstant: h).isActive = true
-    }
-    
-    func configureNavigationBarButtonItem()
-    {
-        
-        let changeGenres = UIButton()
-        changeGenres.setTitle("Change Genre", for: .normal)
-        changeGenres.clipsToBounds = true
-        changeGenres.titleLabel?.font =  UIFont(name:"HelveticaNeue", size:12)
-        changeGenres.setTitleColor(.black, for: .normal)
-        changeGenres.addTarget(self, action: #selector(resetTapped(_:)), for: .touchUpInside)
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView:changeGenres)
-         
-    }
-    
-    @objc func resetTapped(_ sender:UIButton)
-    {
-        stackContainer.reloadData()
-        let vc = GenreSelectionViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-        
-        
     }
     
     func delayWithSeconds(_ seconds: Double, completion: @escaping () -> ())
@@ -140,7 +117,7 @@ extension GameViewController: SwipeCardViewDataSource
     
     func newCard(at index: Int) -> SwipeCardView
     {
-        let gameCard = SwipeCardView(frame: CGRect(x:5,y:150,width:super.view.frame.width-10,height:super.view.frame.height-150))
+        let gameCard = SwipeCardView(frame: CGRect(x:5,y:100,width:super.view.frame.width-10,height:super.view.frame.height-100))
         gameCard.dataSource = gameQuestionsArr[index]
         gameCard.configureView()
         

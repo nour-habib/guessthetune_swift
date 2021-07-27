@@ -49,7 +49,7 @@ class MusicPlayerView: UIView
     {
         
         playButton = UIButton(type: .custom)
-        playButton?.frame = CGRect(x: 150, y: 420, width: 60, height: 60)
+        playButton?.frame = CGRect(x: 150, y: 430, width: 60, height: 60)
         playButton?.layer.cornerRadius = 0.5 * (playButton?.bounds.size.width)!
        
         playButton?.setImage(UIImage(systemName: "play"), for: .normal)

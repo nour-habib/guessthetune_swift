@@ -59,7 +59,7 @@ class SwipeCardView: UIView
         //print("configureView()")
         self.layer.cornerRadius = 15
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderColor = CustomColor.spotifyColor.cgColor
         self.backgroundColor = .black
         
         
@@ -104,7 +104,7 @@ class SwipeCardView: UIView
 
        
         favButton.setImage(UIImage(systemName: "heart"), for:.normal)
-        favButton.frame = CGRect(x: frame.width-55, y: 12, width: 40, height: 40)
+        favButton.frame = CGRect(x: frame.width-55, y: 18, width: 40, height: 40)
         favButton.layer.cornerRadius = 0.5 * (favButton.bounds.size.width)
         favButton.backgroundColor = CustomColor.spotifyColor
         favButton.tintColor = .white

@@ -15,7 +15,9 @@ class StackContainerView: UIView, SwipeCardDelegate
     var remainingCards: Int = 0
     
     var endGameLabel = UILabel(frame:CGRect(x:0,y:0,width:300,height:300))
-    var scoreTextView = UITextView(frame: CGRect(x:20,y:120,width:100,height:27))
+    var scoreTextView = UITextView(frame: CGRect(x:20,y:65,width:100,height:27))
+    
+    var changeGenreButton = UIButton(frame:CGRect(x:260,y:60,width:100,height:50))
 
     var swipeCardViews: [SwipeCardView] = []
     
@@ -44,12 +46,28 @@ class StackContainerView: UIView, SwipeCardDelegate
     
     func configureView()
     {
-        scoreTextView.textColor = .black
+        scoreTextView.textColor = .white
         scoreTextView.font = UIFont(name:"HelveticaNeue-Bold", size:17)
         scoreTextView.isScrollEnabled = false
         scoreTextView.backgroundColor = .clear
         scoreTextView.text = String(getScore())
         addSubview(scoreTextView)
+        
+        changeGenreButton.setTitle("Change Genre", for: .normal)
+        changeGenreButton.clipsToBounds = true
+        changeGenreButton.titleLabel?.font =  UIFont(name:"HelveticaNeue-Bold", size:12)
+        changeGenreButton.setTitleColor(.white, for: .normal)
+        changeGenreButton.addTarget(self, action: #selector(resetTapped(_:)), for: .touchUpInside)
+        addSubview(changeGenreButton)
+        
+    }
+    
+    @objc func resetTapped(_ sender:UIButton)
+    {
+        self.reloadData()
+        let vc = GenreSelectionViewController()
+        (superview?.next as? UIViewController)?.navigationController?.pushViewController(vc, animated: true)
+        
         
     }
   

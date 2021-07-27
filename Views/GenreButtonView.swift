@@ -76,21 +76,21 @@ class GenreButtonView: UIView
     private func configureButtons()
     {
         
-        rapButton.frame = CGRect(x: 145, y: 50, width: 100, height: 100)
+        rapButton.frame = CGRect(x: 145, y: 100, width: 100, height: 100)
         rapButton.layer.cornerRadius = 0.5 * (rapButton.bounds.size.width)
         rapButton.setTitle(Genre.rap.rawValue, for: .normal)
         
         
-        rnbButton.frame = CGRect(x:145,y:180,width:100,height:100)
+        rnbButton.frame = CGRect(x:145,y:230,width:100,height:100)
         rnbButton.layer.cornerRadius = 0.5 * (rnbButton.bounds.size.width)
         rnbButton.setTitle(Genre.rnb.rawValue,for:.normal)
         
-        rockButton.frame = CGRect(x:145,y:310,width:100,height:100)
+        rockButton.frame = CGRect(x:145,y:360,width:100,height:100)
         rockButton.layer.cornerRadius = 0.5 * (rockButton.bounds.size.width)
         rockButton.setTitle(Genre.rock.rawValue, for: .normal)
         
         
-        popButton.frame = CGRect(x:145,y:440,width:100,height:100)
+        popButton.frame = CGRect(x:145,y:490,width:100,height:100)
         popButton.layer.cornerRadius = 0.5 * (popButton.bounds.size.width)
         popButton.setTitle(Genre.pop.rawValue, for: .normal)
         

@@ -27,6 +27,8 @@ class FavouritesViewController: UIViewController,UITableViewDelegate,UITableView
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
+        tableView.backgroundColor = .black
+        self.title = "Favourite Tracks"
     
         
         configureTableView()
@@ -79,10 +81,14 @@ class FavouritesViewController: UIViewController,UITableViewDelegate,UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = tracks.name
-        cell.textLabel?.font = UIFont(name:"HelveticaNeue", size:16)
+        cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size:16)
         cell.textLabel?.textColor = CustomColor.spotifyColor
         cell.backgroundColor = .black
         return cell
+    }
+    
+    private func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = .black
     }
     
     func getAllItems() -> Void

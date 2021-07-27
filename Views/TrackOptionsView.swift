@@ -10,10 +10,10 @@ import Foundation
 class TrackOptionsView: UIView
 {
    
-    var aButton = TrackOptionButton(frame: CGRect(x: 60, y: 100, width: 255, height: 60))
-    var bButton = TrackOptionButton(frame: CGRect(x: 60, y: 165, width: 255, height: 60))
-    var cButton = TrackOptionButton(frame: CGRect(x: 60, y: 230, width: 255, height: 60))
-    var dButton = TrackOptionButton(frame: CGRect(x: 60, y: 295, width: 255, height: 60))
+    var aButton = TrackOptionButton(frame: CGRect(x: 60, y: 110, width: 255, height: 60))
+    var bButton = TrackOptionButton(frame: CGRect(x: 60, y: 175, width: 255, height: 60))
+    var cButton = TrackOptionButton(frame: CGRect(x: 60, y: 240, width: 255, height: 60))
+    var dButton = TrackOptionButton(frame: CGRect(x: 60, y: 305, width: 255, height: 60))
     
     
     override init(frame: CGRect)

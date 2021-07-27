@@ -73,7 +73,16 @@ class GenreSelectionViewController: UIViewController{
     func initializeTabBar(genre:String)
     {
         let tabBar = UITabBarController()
+        tabBar.tabBar.barTintColor = UIColor.black
+        tabBar.tabBar.tintColor = CustomColor.spotifyColor
         
+        
+        //use this code after updating to iOS 13+
+//        let appearance = UITabBarAppearance()
+//        appearance.backgroundColor = .black
+//        tabBar.standardAppearance = appearance
+        
+
         let gameViewController = UINavigationController(rootViewController: GameViewController(genre))
         let favsViewController = UINavigationController(rootViewController: FavouritesViewController())
         
@@ -92,6 +101,8 @@ class GenreSelectionViewController: UIViewController{
         {
             items[x].image = UIImage(systemName: images[x])
         }
+        
+        
         
         tabBar.modalPresentationStyle = .fullScreen
         present(tabBar,animated:true)
