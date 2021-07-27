@@ -24,7 +24,7 @@ class SoundEffects
                try AVAudioSession.sharedInstance().setActive(true)
 
           
-               player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+               player = try AVAudioPlayer(contentsOf: url, fileTypeHint: ext)
 
                /* iOS 10 and earlier require the following line:
                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
@@ -41,5 +41,10 @@ class SoundEffects
     func playAchievement() -> Void
     {
         playSound(type: "achievement",ext: "wav")
+    }
+    
+    func playBubblePop() -> Void
+    {
+        playSound(type:"bubble_pop", ext:"mp3")
     }
 }

@@ -32,6 +32,7 @@ class GenreButton: UIButton
         self.setTitleColor(.white, for: .normal)
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 20
+        self.layer.borderColor = UIColor.white.cgColor
         
     }
 

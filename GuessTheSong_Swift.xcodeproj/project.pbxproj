@@ -37,6 +37,7 @@
 		143EF2742677136300FB47C1 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2732677136300FB47C1 /* SwipeCardView.swift */; };
 		143EF2902678101A00FB47C1 /* TrackOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF28F2678101A00FB47C1 /* TrackOptionsView.swift */; };
 		143EF2982678524000FB47C1 /* TrackOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF2972678524000FB47C1 /* TrackOptionButton.swift */; };
+		14713A7126AE8BB500900DC4 /* bubble_pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14713A7026AE8BB500900DC4 /* bubble_pop.mp3 */; };
 		14769635267B08FA00E1CF61 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14769634267B08FA00E1CF61 /* Question.swift */; };
 		1476963A267D6F8800E1CF61 /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14769639267D6F8800E1CF61 /* StackContainerView.swift */; };
 		14A7C8F4269A552200C104E5 /* TrackContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C8F3269A552200C104E5 /* TrackContainer.swift */; };
@@ -105,6 +106,7 @@
 		143EF2732677136300FB47C1 /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
 		143EF28F2678101A00FB47C1 /* TrackOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOptionsView.swift; sourceTree = "<group>"; };
 		143EF2972678524000FB47C1 /* TrackOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOptionButton.swift; sourceTree = "<group>"; };
+		14713A7026AE8BB500900DC4 /* bubble_pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubble_pop.mp3; sourceTree = "<group>"; };
 		14769634267B08FA00E1CF61 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		14769639267D6F8800E1CF61 /* StackContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
 		14A7C8F3269A552200C104E5 /* TrackContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackContainer.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		14DC9616268AB42E003C6B12 /* Sound Clips */ = {
 			isa = PBXGroup;
 			children = (
+				14713A7026AE8BB500900DC4 /* bubble_pop.mp3 */,
 				14DC95F42688017E003C6B12 /* achievement.wav */,
 			);
 			path = "Sound Clips";
@@ -436,6 +439,7 @@
 			files = (
 				143EF1A62670223500FB47C1 /* LaunchScreen.storyboard in Resources */,
 				143EF1A32670223500FB47C1 /* Preview Assets.xcassets in Resources */,
+				14713A7126AE8BB500900DC4 /* bubble_pop.mp3 in Resources */,
 				14DC95F52688017E003C6B12 /* achievement.wav in Resources */,
 				143EF1A02670223500FB47C1 /* Assets.xcassets in Resources */,
 			);

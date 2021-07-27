@@ -24,7 +24,8 @@ class GenreSelectionViewController: UIViewController{
        genreButtonView.frame = view.bounds
     
         self.view.addSubview(genreButtonView)
-        self.title = "Select Genre"
+        self.navigationController?.setToolbarHidden(true, animated: false);
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         genreButtonView.rapButton.addTarget(self, action: #selector(selectRap(_:)), for: .touchUpInside)
         genreButtonView.rnbButton.addTarget(self, action: #selector(selectRnb(_:)), for: .touchUpInside)
