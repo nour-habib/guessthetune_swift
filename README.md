@@ -12,8 +12,8 @@ SwipeCard code adapted from: https://exploringswift.com/blog/making-a-tinder-esq
 
 
 ![select genre](https://github.com/nour-habib/guessthetune_swift/blob/master/selectgenre.png)
-![game](https://github.com/nour-habib/guessthetune_swift/blob/master/main.png)
-![favourites](https://github.com/nour-habib/guessthetune_swift/blob/master/fav.png)
+![game](https://github.com/nour-habib/guessthetune_swift/blob/master/maingame.png)
+![favourites](https://github.com/nour-habib/guessthetune_swift/blob/master/favtracks.png)
 
 
 
