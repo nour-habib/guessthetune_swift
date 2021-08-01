@@ -121,7 +121,7 @@ class SwipeCardView: UIView
     @objc
     func checkAnswer(_ sender:UIButton)
     {
-        if(sender.currentTitle == dataSource?.mainTrack?.name)
+        if(sender.currentTitle == dataSource?.mainTrack?.name) //correct answer
         {
             let card = self
             
@@ -134,7 +134,7 @@ class SwipeCardView: UIView
             delegate?.swipeDidEnd(on: card)
             
         }
-        else
+        else //incorrect answer
         {
             
             sender.backgroundColor = .red
