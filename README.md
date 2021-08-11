@@ -19,4 +19,4 @@ SwipeCard code adapted from: https://exploringswift.com/blog/making-a-tinder-esq
 
 
 
-![app](https://github.com/nour-habib/guessthetune_swift/blob/master/appvid.gif?raw=true)
+![app](https://github.com/nour-habib/guessthetune_swift/blob/master/appgif.gif?raw=true)
