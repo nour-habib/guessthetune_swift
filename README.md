@@ -8,7 +8,6 @@ Swipe right to skip ->
 
 Warning: Spotify Client id & secret required to run the app
 
-More features to be added
 
 SwipeCard code adapted from: https://exploringswift.com/blog/making-a-tinder-esque-card-swiping-interface-using-swift
 
