@@ -42,7 +42,7 @@ class GenreButtonView: UIView
             self.addSubview(rapButton)
             SoundEffects.playBubblePop()
             self.applyRapButtonConstraints()
-            //rapButton.layer.cornerRadius = 0.5 * (rapButton.frame.height)
+            rapButton.layer.cornerRadius = 0.5 * (rapButton.frame.height)
             rapButton.setTitle(Genre.rap.rawValue, for: .normal)
         }
         
@@ -98,7 +98,7 @@ class GenreButtonView: UIView
         
         rnbButton.translatesAutoresizingMaskIntoConstraints = false
         rnbButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-        rnbButton.topAnchor.constraint(equalTo: rapButton.bottomAnchor, constant: 0).isActive = true
+        rnbButton.topAnchor.constraint(equalTo: rapButton.bottomAnchor, constant: 20).isActive = true
         rnbButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
         rnbButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
     }
@@ -110,7 +110,7 @@ class GenreButtonView: UIView
         
         rockButton.translatesAutoresizingMaskIntoConstraints = false
         rockButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-        rockButton.topAnchor.constraint(equalTo: rnbButton.bottomAnchor, constant: 0).isActive = true
+        rockButton.topAnchor.constraint(equalTo: rnbButton.bottomAnchor, constant: 20).isActive = true
         rockButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
         rockButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
     }
@@ -122,7 +122,7 @@ class GenreButtonView: UIView
         
         popButton.translatesAutoresizingMaskIntoConstraints = false
         popButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-        popButton.topAnchor.constraint(equalTo: rockButton.bottomAnchor, constant: 0).isActive = true
+        popButton.topAnchor.constraint(equalTo: rockButton.bottomAnchor, constant: 20).isActive = true
         popButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
         popButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
     }
