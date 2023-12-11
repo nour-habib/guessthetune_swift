@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A6EA4F2B1A9A1A002A549C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA4E2B1A9A1A002A549C /* AppDelegate.swift */; };
+		14A6EA512B1A9A1A002A549C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */; };
+		14A6EA532B1A9A1A002A549C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA522B1A9A1A002A549C /* ViewController.swift */; };
+		14A6EA592B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA572B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodeld */; };
+		14A6EA5B2B1A9A1D002A549C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EA5A2B1A9A1D002A549C /* Assets.xcassets */; };
+		14A6EA5E2B1A9A1D002A549C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EA5C2B1A9A1D002A549C /* LaunchScreen.storyboard */; };
+		14A6EA692B1A9A1D002A549C /* GuessTheTuneGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA682B1A9A1D002A549C /* GuessTheTuneGameTests.swift */; };
+		14A6EA732B1A9A1D002A549C /* GuessTheTuneGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA722B1A9A1D002A549C /* GuessTheTuneGameUITests.swift */; };
+		14A6EA752B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA742B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift */; };
+		14A6EA822B1A9BC4002A549C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA812B1A9BC4002A549C /* GameViewController.swift */; };
+		14A6EA852B1A9C47002A549C /* GenreSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA842B1A9C47002A549C /* GenreSelectionViewController.swift */; };
+		14A6EA872B1A9D0B002A549C /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA862B1A9D0B002A549C /* FavouritesViewController.swift */; };
+		14A6EA892B1A9D47002A549C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA882B1A9D47002A549C /* SettingsViewController.swift */; };
+		14A6EA8C2B1A9D8E002A549C /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA8B2B1A9D8E002A549C /* Artist.swift */; };
+		14A6EA8E2B1A9DE3002A549C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA8D2B1A9DE3002A549C /* Question.swift */; };
+		14A6EA902B1A9E2F002A549C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA8F2B1A9E2F002A549C /* UserProfile.swift */; };
+		14A6EA922B1A9E71002A549C /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA912B1A9E71002A549C /* Genre.swift */; };
+		14A6EA942B1A9E9D002A549C /* OptionTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA932B1A9E9D002A549C /* OptionTracks.swift */; };
+		14A6EA962B1A9EB7002A549C /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA952B1A9EB7002A549C /* Track.swift */; };
+		14A6EA982B1A9EDB002A549C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA972B1A9EDB002A549C /* Album.swift */; };
+		14A6EA9B2B1A9F34002A549C /* GenreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA9A2B1A9F34002A549C /* GenreButton.swift */; };
+		14A6EA9D2B1A9F61002A549C /* GenreButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA9C2B1A9F61002A549C /* GenreButtonView.swift */; };
+		14A6EA9F2B1AA04C002A549C /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA9E2B1AA04C002A549C /* MusicPlayerView.swift */; };
+		14A6EAA12B1AA085002A549C /* TrackOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAA02B1AA085002A549C /* TrackOptionsView.swift */; };
+		14A6EAA32B1AA0C8002A549C /* TrackOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAA22B1AA0C8002A549C /* TrackOptionButton.swift */; };
+		14A6EAA52B1AA0F6002A549C /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAA42B1AA0F6002A549C /* SwipeCardView.swift */; };
+		14A6EAA72B1AA10E002A549C /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAA62B1AA10E002A549C /* StackContainerView.swift */; };
+		14A6EAAA2B1AA390002A549C /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAA92B1AA390002A549C /* SoundEffects.swift */; };
+		14A6EAAC2B1AA3B5002A549C /* GamePlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAAB2B1AA3B5002A549C /* GamePlaylist.swift */; };
+		14A6EAAE2B1AA3CE002A549C /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAAD2B1AA3CE002A549C /* CustomColor.swift */; };
+		14A6EAB02B1AA443002A549C /* CoreDataX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAAF2B1AA443002A549C /* CoreDataX.swift */; };
+		14A6EAB22B1AA473002A549C /* AuthSpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB12B1AA473002A549C /* AuthSpotify.swift */; };
+		14A6EAB52B1AA4A0002A549C /* APISpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB42B1AA4A0002A549C /* APISpotify.swift */; };
+		14A6EAB72B1AA516002A549C /* SwipeCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB62B1AA516002A549C /* SwipeCardViewDataSource.swift */; };
+		14A6EABA2B1AA585002A549C /* TrackItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB92B1AA585002A549C /* TrackItem+CoreDataProperties.swift */; };
+		14A6EABC2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EABB2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift */; };
+		14A6EABE2B1AA5EE002A549C /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EABD2B1AA5EE002A549C /* achievement.wav */; };
+		14A6EAC02B1AA5FC002A549C /* bubble_pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14A6EA652B1A9A1D002A549C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14A6EA432B1A9A1A002A549C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14A6EA4A2B1A9A1A002A549C;
+			remoteInfo = GuessTheTuneGame;
+		};
+		14A6EA6F2B1A9A1D002A549C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14A6EA432B1A9A1A002A549C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14A6EA4A2B1A9A1A002A549C;
+			remoteInfo = GuessTheTuneGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14A6EA4B2B1A9A1A002A549C /* GuessTheTuneGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheTuneGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A6EA4E2B1A9A1A002A549C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		14A6EA522B1A9A1A002A549C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14A6EA582B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuessTheTuneGame.xcdatamodel; sourceTree = "<group>"; };
+		14A6EA5A2B1A9A1D002A549C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14A6EA5D2B1A9A1D002A549C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14A6EA5F2B1A9A1D002A549C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A6EA642B1A9A1D002A549C /* GuessTheTuneGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheTuneGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A6EA682B1A9A1D002A549C /* GuessTheTuneGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheTuneGameTests.swift; sourceTree = "<group>"; };
+		14A6EA6E2B1A9A1D002A549C /* GuessTheTuneGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheTuneGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A6EA722B1A9A1D002A549C /* GuessTheTuneGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheTuneGameUITests.swift; sourceTree = "<group>"; };
+		14A6EA742B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheTuneGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14A6EA812B1A9BC4002A549C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		14A6EA842B1A9C47002A549C /* GenreSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionViewController.swift; sourceTree = "<group>"; };
+		14A6EA862B1A9D0B002A549C /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		14A6EA882B1A9D47002A549C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		14A6EA8B2B1A9D8E002A549C /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		14A6EA8D2B1A9DE3002A549C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		14A6EA8F2B1A9E2F002A549C /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		14A6EA912B1A9E71002A549C /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		14A6EA932B1A9E9D002A549C /* OptionTracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTracks.swift; sourceTree = "<group>"; };
+		14A6EA952B1A9EB7002A549C /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		14A6EA972B1A9EDB002A549C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		14A6EA9A2B1A9F34002A549C /* GenreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButton.swift; sourceTree = "<group>"; };
+		14A6EA9C2B1A9F61002A549C /* GenreButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonView.swift; sourceTree = "<group>"; };
+		14A6EA9E2B1AA04C002A549C /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
+		14A6EAA02B1AA085002A549C /* TrackOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOptionsView.swift; sourceTree = "<group>"; };
+		14A6EAA22B1AA0C8002A549C /* TrackOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOptionButton.swift; sourceTree = "<group>"; };
+		14A6EAA42B1AA0F6002A549C /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
+		14A6EAA62B1AA10E002A549C /* StackContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
+		14A6EAA92B1AA390002A549C /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		14A6EAAB2B1AA3B5002A549C /* GamePlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlaylist.swift; sourceTree = "<group>"; };
+		14A6EAAD2B1AA3CE002A549C /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		14A6EAAF2B1AA443002A549C /* CoreDataX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataX.swift; sourceTree = "<group>"; };
+		14A6EAB12B1AA473002A549C /* AuthSpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSpotify.swift; sourceTree = "<group>"; };
+		14A6EAB42B1AA4A0002A549C /* APISpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISpotify.swift; sourceTree = "<group>"; };
+		14A6EAB62B1AA516002A549C /* SwipeCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardViewDataSource.swift; sourceTree = "<group>"; };
+		14A6EAB92B1AA585002A549C /* TrackItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TrackItem+CoreDataProperties.swift"; path = "GuessTheTuneGame/Classes/TrackItem+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		14A6EABB2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		14A6EABD2B1AA5EE002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = achievement.wav; path = "../../../Nov29/guessthetune_swift/Sound Clips/achievement.wav"; sourceTree = "<group>"; };
+		14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubble_pop.mp3; sourceTree = "<group>"; };
+		14A6EAC22B1AA624002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
+		14A6EAC32B1AA7A9002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = achievement.wav; path = "../../../../Nov29/guessthetune_swift/Sound Clips/achievement.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14A6EA482B1A9A1A002A549C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A6EA612B1A9A1D002A549C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A6EA6B2B1A9A1D002A549C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A6EA422B1A9A1A002A549C = {
+			isa = PBXGroup;
+			children = (
+				14A6EA4D2B1A9A1A002A549C /* GuessTheTuneGame */,
+				14A6EA672B1A9A1D002A549C /* GuessTheTuneGameTests */,
+				14A6EA712B1A9A1D002A549C /* GuessTheTuneGameUITests */,
+				14A6EA4C2B1A9A1A002A549C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14A6EA4C2B1A9A1A002A549C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EA4B2B1A9A1A002A549C /* GuessTheTuneGame.app */,
+				14A6EA642B1A9A1D002A549C /* GuessTheTuneGameTests.xctest */,
+				14A6EA6E2B1A9A1D002A549C /* GuessTheTuneGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14A6EA4D2B1A9A1A002A549C /* GuessTheTuneGame */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EABD2B1AA5EE002A549C /* achievement.wav */,
+				14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */,
+				14A6EA4E2B1A9A1A002A549C /* AppDelegate.swift */,
+				14A6EAC12B1AA606002A549C /* SoundEffects */,
+				14A6EAB82B1AA567002A549C /* TrackItem */,
+				14A6EAB32B1AA485002A549C /* Spotify */,
+				14A6EAA82B1AA356002A549C /* Classes */,
+				14A6EA992B1A9F20002A549C /* Views */,
+				14A6EA8A2B1A9D7B002A549C /* Models */,
+				14A6EA832B1A9BF0002A549C /* ViewControllers */,
+				14A6EA522B1A9A1A002A549C /* ViewController.swift */,
+				14A6EA5A2B1A9A1D002A549C /* Assets.xcassets */,
+				14A6EA5C2B1A9A1D002A549C /* LaunchScreen.storyboard */,
+				14A6EA5F2B1A9A1D002A549C /* Info.plist */,
+				14A6EA572B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodeld */,
+			);
+			path = GuessTheTuneGame;
+			sourceTree = "<group>";
+		};
+		14A6EA672B1A9A1D002A549C /* GuessTheTuneGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EA682B1A9A1D002A549C /* GuessTheTuneGameTests.swift */,
+			);
+			path = GuessTheTuneGameTests;
+			sourceTree = "<group>";
+		};
+		14A6EA712B1A9A1D002A549C /* GuessTheTuneGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EA722B1A9A1D002A549C /* GuessTheTuneGameUITests.swift */,
+				14A6EA742B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift */,
+			);
+			path = GuessTheTuneGameUITests;
+			sourceTree = "<group>";
+		};
+		14A6EA832B1A9BF0002A549C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EA812B1A9BC4002A549C /* GameViewController.swift */,
+				14A6EA862B1A9D0B002A549C /* FavouritesViewController.swift */,
+				14A6EA842B1A9C47002A549C /* GenreSelectionViewController.swift */,
+				14A6EA882B1A9D47002A549C /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14A6EA8A2B1A9D7B002A549C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EA8B2B1A9D8E002A549C /* Artist.swift */,
+				14A6EA8D2B1A9DE3002A549C /* Question.swift */,
+				14A6EA8F2B1A9E2F002A549C /* UserProfile.swift */,
+				14A6EA912B1A9E71002A549C /* Genre.swift */,
+				14A6EA972B1A9EDB002A549C /* Album.swift */,
+				14A6EA932B1A9E9D002A549C /* OptionTracks.swift */,
+				14A6EA952B1A9EB7002A549C /* Track.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14A6EA992B1A9F20002A549C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EA9A2B1A9F34002A549C /* GenreButton.swift */,
+				14A6EA9C2B1A9F61002A549C /* GenreButtonView.swift */,
+				14A6EA9E2B1AA04C002A549C /* MusicPlayerView.swift */,
+				14A6EAA02B1AA085002A549C /* TrackOptionsView.swift */,
+				14A6EAA22B1AA0C8002A549C /* TrackOptionButton.swift */,
+				14A6EAA42B1AA0F6002A549C /* SwipeCardView.swift */,
+				14A6EAA62B1AA10E002A549C /* StackContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14A6EAA82B1AA356002A549C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EAA92B1AA390002A549C /* SoundEffects.swift */,
+				14A6EAAF2B1AA443002A549C /* CoreDataX.swift */,
+				14A6EAAB2B1AA3B5002A549C /* GamePlaylist.swift */,
+				14A6EAAD2B1AA3CE002A549C /* CustomColor.swift */,
+				14A6EAB62B1AA516002A549C /* SwipeCardViewDataSource.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14A6EAB32B1AA485002A549C /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EAB12B1AA473002A549C /* AuthSpotify.swift */,
+				14A6EAB42B1AA4A0002A549C /* APISpotify.swift */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		14A6EAB82B1AA567002A549C /* TrackItem */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EAB92B1AA585002A549C /* TrackItem+CoreDataProperties.swift */,
+				14A6EABB2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift */,
+			);
+			path = TrackItem;
+			sourceTree = "<group>";
+		};
+		14A6EAC12B1AA606002A549C /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EAC22B1AA624002A549C /* achievement.wav */,
+				14A6EAC32B1AA7A9002A549C /* achievement.wav */,
+				14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */,
+			);
+			path = SoundEffects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14A6EA4A2B1A9A1A002A549C /* GuessTheTuneGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A6EA782B1A9A1D002A549C /* Build configuration list for PBXNativeTarget "GuessTheTuneGame" */;
+			buildPhases = (
+				14A6EA472B1A9A1A002A549C /* Sources */,
+				14A6EA482B1A9A1A002A549C /* Frameworks */,
+				14A6EA492B1A9A1A002A549C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuessTheTuneGame;
+			productName = GuessTheTuneGame;
+			productReference = 14A6EA4B2B1A9A1A002A549C /* GuessTheTuneGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14A6EA632B1A9A1D002A549C /* GuessTheTuneGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A6EA7B2B1A9A1D002A549C /* Build configuration list for PBXNativeTarget "GuessTheTuneGameTests" */;
+			buildPhases = (
+				14A6EA602B1A9A1D002A549C /* Sources */,
+				14A6EA612B1A9A1D002A549C /* Frameworks */,
+				14A6EA622B1A9A1D002A549C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14A6EA662B1A9A1D002A549C /* PBXTargetDependency */,
+			);
+			name = GuessTheTuneGameTests;
+			productName = GuessTheTuneGameTests;
+			productReference = 14A6EA642B1A9A1D002A549C /* GuessTheTuneGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14A6EA6D2B1A9A1D002A549C /* GuessTheTuneGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14A6EA7E2B1A9A1D002A549C /* Build configuration list for PBXNativeTarget "GuessTheTuneGameUITests" */;
+			buildPhases = (
+				14A6EA6A2B1A9A1D002A549C /* Sources */,
+				14A6EA6B2B1A9A1D002A549C /* Frameworks */,
+				14A6EA6C2B1A9A1D002A549C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14A6EA702B1A9A1D002A549C /* PBXTargetDependency */,
+			);
+			name = GuessTheTuneGameUITests;
+			productName = GuessTheTuneGameUITests;
+			productReference = 14A6EA6E2B1A9A1D002A549C /* GuessTheTuneGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14A6EA432B1A9A1A002A549C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					14A6EA4A2B1A9A1A002A549C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					14A6EA632B1A9A1D002A549C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 14A6EA4A2B1A9A1A002A549C;
+					};
+					14A6EA6D2B1A9A1D002A549C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 14A6EA4A2B1A9A1A002A549C;
+					};
+				};
+			};
+			buildConfigurationList = 14A6EA462B1A9A1A002A549C /* Build configuration list for PBXProject "GuessTheTuneGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14A6EA422B1A9A1A002A549C;
+			productRefGroup = 14A6EA4C2B1A9A1A002A549C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14A6EA4A2B1A9A1A002A549C /* GuessTheTuneGame */,
+				14A6EA632B1A9A1D002A549C /* GuessTheTuneGameTests */,
+				14A6EA6D2B1A9A1D002A549C /* GuessTheTuneGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14A6EA492B1A9A1A002A549C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A6EABE2B1AA5EE002A549C /* achievement.wav in Resources */,
+				14A6EA5E2B1A9A1D002A549C /* LaunchScreen.storyboard in Resources */,
+				14A6EAC02B1AA5FC002A549C /* bubble_pop.mp3 in Resources */,
+				14A6EA5B2B1A9A1D002A549C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A6EA622B1A9A1D002A549C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A6EA6C2B1A9A1D002A549C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14A6EA472B1A9A1A002A549C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A6EAA32B1AA0C8002A549C /* TrackOptionButton.swift in Sources */,
+				14A6EA822B1A9BC4002A549C /* GameViewController.swift in Sources */,
+				14A6EABC2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift in Sources */,
+				14A6EAAA2B1AA390002A549C /* SoundEffects.swift in Sources */,
+				14A6EAB52B1AA4A0002A549C /* APISpotify.swift in Sources */,
+				14A6EAAE2B1AA3CE002A549C /* CustomColor.swift in Sources */,
+				14A6EA852B1A9C47002A549C /* GenreSelectionViewController.swift in Sources */,
+				14A6EA532B1A9A1A002A549C /* ViewController.swift in Sources */,
+				14A6EA922B1A9E71002A549C /* Genre.swift in Sources */,
+				14A6EAA52B1AA0F6002A549C /* SwipeCardView.swift in Sources */,
+				14A6EA942B1A9E9D002A549C /* OptionTracks.swift in Sources */,
+				14A6EA8C2B1A9D8E002A549C /* Artist.swift in Sources */,
+				14A6EA4F2B1A9A1A002A549C /* AppDelegate.swift in Sources */,
+				14A6EAA12B1AA085002A549C /* TrackOptionsView.swift in Sources */,
+				14A6EA902B1A9E2F002A549C /* UserProfile.swift in Sources */,
+				14A6EABA2B1AA585002A549C /* TrackItem+CoreDataProperties.swift in Sources */,
+				14A6EA8E2B1A9DE3002A549C /* Question.swift in Sources */,
+				14A6EA9B2B1A9F34002A549C /* GenreButton.swift in Sources */,
+				14A6EA9D2B1A9F61002A549C /* GenreButtonView.swift in Sources */,
+				14A6EA512B1A9A1A002A549C /* SceneDelegate.swift in Sources */,
+				14A6EA872B1A9D0B002A549C /* FavouritesViewController.swift in Sources */,
+				14A6EAB22B1AA473002A549C /* AuthSpotify.swift in Sources */,
+				14A6EAAC2B1AA3B5002A549C /* GamePlaylist.swift in Sources */,
+				14A6EA592B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodeld in Sources */,
+				14A6EAA72B1AA10E002A549C /* StackContainerView.swift in Sources */,
+				14A6EA892B1A9D47002A549C /* SettingsViewController.swift in Sources */,
+				14A6EAB72B1AA516002A549C /* SwipeCardViewDataSource.swift in Sources */,
+				14A6EA9F2B1AA04C002A549C /* MusicPlayerView.swift in Sources */,
+				14A6EA962B1A9EB7002A549C /* Track.swift in Sources */,
+				14A6EA982B1A9EDB002A549C /* Album.swift in Sources */,
+				14A6EAB02B1AA443002A549C /* CoreDataX.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A6EA602B1A9A1D002A549C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A6EA692B1A9A1D002A549C /* GuessTheTuneGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A6EA6A2B1A9A1D002A549C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A6EA752B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift in Sources */,
+				14A6EA732B1A9A1D002A549C /* GuessTheTuneGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14A6EA662B1A9A1D002A549C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14A6EA4A2B1A9A1A002A549C /* GuessTheTuneGame */;
+			targetProxy = 14A6EA652B1A9A1D002A549C /* PBXContainerItemProxy */;
+		};
+		14A6EA702B1A9A1D002A549C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14A6EA4A2B1A9A1A002A549C /* GuessTheTuneGame */;
+			targetProxy = 14A6EA6F2B1A9A1D002A549C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14A6EA5C2B1A9A1D002A549C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14A6EA5D2B1A9A1D002A549C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14A6EA762B1A9A1D002A549C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14A6EA772B1A9A1D002A549C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14A6EA792B1A9A1D002A549C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuessTheTuneGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nhabib.GuessTheTuneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14A6EA7A2B1A9A1D002A549C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuessTheTuneGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nhabib.GuessTheTuneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14A6EA7C2B1A9A1D002A549C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nhabib.GuessTheTuneGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessTheTuneGame.app/GuessTheTuneGame";
+			};
+			name = Debug;
+		};
+		14A6EA7D2B1A9A1D002A549C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nhabib.GuessTheTuneGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessTheTuneGame.app/GuessTheTuneGame";
+			};
+			name = Release;
+		};
+		14A6EA7F2B1A9A1D002A549C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nhabib.GuessTheTuneGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuessTheTuneGame;
+			};
+			name = Debug;
+		};
+		14A6EA802B1A9A1D002A549C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38F3XB5MMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nhabib.GuessTheTuneGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuessTheTuneGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14A6EA462B1A9A1A002A549C /* Build configuration list for PBXProject "GuessTheTuneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A6EA762B1A9A1D002A549C /* Debug */,
+				14A6EA772B1A9A1D002A549C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14A6EA782B1A9A1D002A549C /* Build configuration list for PBXNativeTarget "GuessTheTuneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A6EA792B1A9A1D002A549C /* Debug */,
+				14A6EA7A2B1A9A1D002A549C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14A6EA7B2B1A9A1D002A549C /* Build configuration list for PBXNativeTarget "GuessTheTuneGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A6EA7C2B1A9A1D002A549C /* Debug */,
+				14A6EA7D2B1A9A1D002A549C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14A6EA7E2B1A9A1D002A549C /* Build configuration list for PBXNativeTarget "GuessTheTuneGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A6EA7F2B1A9A1D002A549C /* Debug */,
+				14A6EA802B1A9A1D002A549C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		14A6EA572B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				14A6EA582B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodel */,
+			);
+			currentVersion = 14A6EA582B1A9A1A002A549C /* GuessTheTuneGame.xcdatamodel */;
+			path = GuessTheTuneGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 14A6EA432B1A9A1A002A549C /* Project object */;
+}
