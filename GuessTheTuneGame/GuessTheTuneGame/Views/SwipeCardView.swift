@@ -207,7 +207,15 @@ class SwipeCardView: UIView
         sender.backgroundColor = .red
         
         guard let mainTrack = dataSource?.mainTrack else {return}
-        //CoreData_.saveItem(track: mainTrack)
+        
+        do
+        {
+            try CoreData_.saveItem(track: mainTrack)
+        }
+        catch
+        {
+            print("Add to favs error")
+        }
         showAlert(title: "Saved", msg: "Track saved.")
     }
     

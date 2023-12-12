@@ -5,26 +5,19 @@
 //  Created by Nour Habib on 2023-12-01.
 //
 
-import Foundation
 import CoreData
-
-enum CoreDataError: Error
-{
-    case saveError
-    case deleteError
-    case searchError
-}
 
 class CoreDataX
 {
-    static let shared = CoreDataX()
-    
     init(){}
     
-    //Create and save TrackItem
-    func saveItem(track: Track)
+    var managedObjectContext: NSManagedObjectContext?
+    
+    func saveItem(track: Track) throws
     {
-        let newTrackItem = TrackItem(context: context)
+        guard let managedObjectContext = managedObjectContext else {return}
+
+        let newTrackItem = TrackItem(context: managedObjectContext)
         newTrackItem.album = track.album?.name
         newTrackItem.artists = track.artists[0].name
         newTrackItem.id = track.id
@@ -32,24 +25,34 @@ class CoreDataX
 
         do
         {
-            try context.save()
+            try managedObjectContext.save()
         }
         catch
         {
-            print("save error")
+            throw CoreDataError.saveError
         }
     }
 
-    func deleteItem(track: TrackItem)
+    func deleteItem(track: TrackItem) throws
     {
-        context.delete(track)
+        guard let managedObjectContext = managedObjectContext else {return}
+        
+        managedObjectContext.delete(track)
+        
         do
         {
-            try context.save()
+            try managedObjectContext.save()
         }
         catch
         {
-            print("delete error")
+            throw CoreDataError.deleteError
         }
     }
+}
+
+enum CoreDataError: Error
+{
+    case saveError
+    case deleteError
+    case searchError
 }

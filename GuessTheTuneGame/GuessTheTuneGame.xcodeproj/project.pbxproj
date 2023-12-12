@@ -41,10 +41,10 @@
 		14A6EAB22B1AA473002A549C /* AuthSpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB12B1AA473002A549C /* AuthSpotify.swift */; };
 		14A6EAB52B1AA4A0002A549C /* APISpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB42B1AA4A0002A549C /* APISpotify.swift */; };
 		14A6EAB72B1AA516002A549C /* SwipeCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB62B1AA516002A549C /* SwipeCardViewDataSource.swift */; };
-		14A6EABA2B1AA585002A549C /* TrackItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB92B1AA585002A549C /* TrackItem+CoreDataProperties.swift */; };
-		14A6EABC2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EABB2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift */; };
 		14A6EABE2B1AA5EE002A549C /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EABD2B1AA5EE002A549C /* achievement.wav */; };
 		14A6EAC02B1AA5FC002A549C /* bubble_pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */; };
+		14A6EAC62B27E898002A549C /* TrackItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAC42B27E898002A549C /* TrackItem+CoreDataClass.swift */; };
+		14A6EAC72B27E898002A549C /* TrackItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAC52B27E898002A549C /* TrackItem+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,12 +103,12 @@
 		14A6EAB12B1AA473002A549C /* AuthSpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSpotify.swift; sourceTree = "<group>"; };
 		14A6EAB42B1AA4A0002A549C /* APISpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISpotify.swift; sourceTree = "<group>"; };
 		14A6EAB62B1AA516002A549C /* SwipeCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardViewDataSource.swift; sourceTree = "<group>"; };
-		14A6EAB92B1AA585002A549C /* TrackItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TrackItem+CoreDataProperties.swift"; path = "GuessTheTuneGame/Classes/TrackItem+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		14A6EABB2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		14A6EABD2B1AA5EE002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = achievement.wav; path = "../../../Nov29/guessthetune_swift/Sound Clips/achievement.wav"; sourceTree = "<group>"; };
 		14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubble_pop.mp3; sourceTree = "<group>"; };
 		14A6EAC22B1AA624002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
 		14A6EAC32B1AA7A9002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = achievement.wav; path = "../../../../Nov29/guessthetune_swift/Sound Clips/achievement.wav"; sourceTree = "<group>"; };
+		14A6EAC42B27E898002A549C /* TrackItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		14A6EAC52B27E898002A549C /* TrackItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				14A6EABD2B1AA5EE002A549C /* achievement.wav */,
+				14A6EAC82B27EA21002A549C /* TrackItem */,
 				14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */,
 				14A6EA4E2B1A9A1A002A549C /* AppDelegate.swift */,
 				14A6EAC12B1AA606002A549C /* SoundEffects */,
-				14A6EAB82B1AA567002A549C /* TrackItem */,
 				14A6EAB32B1AA485002A549C /* Spotify */,
 				14A6EAA82B1AA356002A549C /* Classes */,
 				14A6EA992B1A9F20002A549C /* Views */,
@@ -255,15 +255,6 @@
 			path = Spotify;
 			sourceTree = "<group>";
 		};
-		14A6EAB82B1AA567002A549C /* TrackItem */ = {
-			isa = PBXGroup;
-			children = (
-				14A6EAB92B1AA585002A549C /* TrackItem+CoreDataProperties.swift */,
-				14A6EABB2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift */,
-			);
-			path = TrackItem;
-			sourceTree = "<group>";
-		};
 		14A6EAC12B1AA606002A549C /* SoundEffects */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +263,15 @@
 				14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */,
 			);
 			path = SoundEffects;
+			sourceTree = "<group>";
+		};
+		14A6EAC82B27EA21002A549C /* TrackItem */ = {
+			isa = PBXGroup;
+			children = (
+				14A6EAC42B27E898002A549C /* TrackItem+CoreDataClass.swift */,
+				14A6EAC52B27E898002A549C /* TrackItem+CoreDataProperties.swift */,
+			);
+			path = TrackItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +408,6 @@
 			files = (
 				14A6EAA32B1AA0C8002A549C /* TrackOptionButton.swift in Sources */,
 				14A6EA822B1A9BC4002A549C /* GameViewController.swift in Sources */,
-				14A6EABC2B1AA5AE002A549C /* TrackItem+CoreDataClass.swift in Sources */,
 				14A6EAAA2B1AA390002A549C /* SoundEffects.swift in Sources */,
 				14A6EAB52B1AA4A0002A549C /* APISpotify.swift in Sources */,
 				14A6EAAE2B1AA3CE002A549C /* CustomColor.swift in Sources */,
@@ -421,11 +420,11 @@
 				14A6EA4F2B1A9A1A002A549C /* AppDelegate.swift in Sources */,
 				14A6EAA12B1AA085002A549C /* TrackOptionsView.swift in Sources */,
 				14A6EA902B1A9E2F002A549C /* UserProfile.swift in Sources */,
-				14A6EABA2B1AA585002A549C /* TrackItem+CoreDataProperties.swift in Sources */,
 				14A6EA8E2B1A9DE3002A549C /* Question.swift in Sources */,
 				14A6EA9B2B1A9F34002A549C /* GenreButton.swift in Sources */,
 				14A6EA9D2B1A9F61002A549C /* GenreButtonView.swift in Sources */,
 				14A6EA512B1A9A1A002A549C /* SceneDelegate.swift in Sources */,
+				14A6EAC62B27E898002A549C /* TrackItem+CoreDataClass.swift in Sources */,
 				14A6EA872B1A9D0B002A549C /* FavouritesViewController.swift in Sources */,
 				14A6EAB22B1AA473002A549C /* AuthSpotify.swift in Sources */,
 				14A6EAAC2B1AA3B5002A549C /* GamePlaylist.swift in Sources */,
@@ -437,6 +436,7 @@
 				14A6EA962B1A9EB7002A549C /* Track.swift in Sources */,
 				14A6EA982B1A9EDB002A549C /* Album.swift in Sources */,
 				14A6EAB02B1AA443002A549C /* CoreDataX.swift in Sources */,
+				14A6EAC72B27E898002A549C /* TrackItem+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

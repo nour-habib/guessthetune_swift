@@ -5,7 +5,6 @@
 //  Created by Nour Habib on 2023-09-11.
 //
 
-import Foundation
 import UIKit
 
 class SettingsViewController: UIViewController
@@ -15,8 +14,8 @@ class SettingsViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.view.backgroundColor = CustomColor.offWhite
-        self.title = "Settings"
+        view.backgroundColor = CustomColor.offWhite
+        title = "Settings"
         self.clearCacheButton = UIButton(frame: CGRect(x: 0, y: 150, width: UIScreen.main.bounds.width, height: 30))
         
         configureButton()
