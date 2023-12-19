@@ -7,6 +7,6 @@
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="TrackItem" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="TrackItem" positionX="-45" positionY="0" width="128" height="89"/>
     </elements>
 </model>

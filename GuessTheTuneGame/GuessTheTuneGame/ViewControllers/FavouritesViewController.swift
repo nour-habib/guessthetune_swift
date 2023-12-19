@@ -12,7 +12,6 @@ class FavouritesViewController: UIViewController, UITableViewDelegate, UITableVi
 {
     private var tableView: UITableView?
     private var favTracks: [TrackItem]?
-    var managedObjectContext: NSManagedObjectContext?
     
     override func viewDidLoad()
     {
@@ -107,7 +106,7 @@ class FavouritesViewController: UIViewController, UITableViewDelegate, UITableVi
     {
         do
         {
-            self.favTracks = try managedObjectContext?.fetch(TrackItem.fetchRequest())
+            self.favTracks = try context.fetch(TrackItem.fetchRequest())
             guard let tableView = tableView else {return}
 
             DispatchQueue.main.async{
