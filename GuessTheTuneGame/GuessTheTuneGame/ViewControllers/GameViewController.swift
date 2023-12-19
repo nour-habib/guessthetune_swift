@@ -140,15 +140,14 @@ extension GameViewController: SwipeCardViewDataSource
     
     func newCard(at index: Int) -> SwipeCardView
     {
-        
-        let gameCard = SwipeCardView(frame: CGRect(x:5,y:100,width:super.view.frame.width-10,height:super.view.frame.height-215))
-        
+        let swipeCardView = SwipeCardView(frame: CGRect(x:5,y:100,width:super.view.frame.width-10,height:super.view.frame.height-215))
+    
         guard let gameQuestionsArr = gameQuestionsArr else {return SwipeCardView()}
         
-        gameCard.dataSource = gameQuestionsArr[index]
-        gameCard.configureView()
+        swipeCardView.dataSource = gameQuestionsArr[index]
+        swipeCardView.configureView()
         
-        return gameCard
+        return swipeCardView
     }
     
     func emptyView() -> UIView?

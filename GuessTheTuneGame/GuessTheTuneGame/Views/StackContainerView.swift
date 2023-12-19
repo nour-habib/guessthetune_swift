@@ -183,7 +183,6 @@ class StackContainerView: UIView, SwipeCardDelegate
     
     private func addCardView(cardView: SwipeCardView,atIndex index: Int)
     {
-        
         cardView.delegate = self
         swipeCardViews.append(cardView)
         UIView.transition(with: cardView, duration: 1, options: [.transitionCrossDissolve], animations: {

@@ -12,6 +12,7 @@ var CoreData_ = CoreDataX()
 let cache = URLCache.shared
 
 let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+var orientationLock = UIInterfaceOrientationMask.all
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,6 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window.makeKeyAndVisible()
 //        self.window = window
         return true
+    }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask
+    {
+        return orientationLock
     }
 
     // MARK: UISceneSession Lifecycle
