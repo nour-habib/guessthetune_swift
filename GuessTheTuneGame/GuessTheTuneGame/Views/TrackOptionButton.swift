@@ -23,9 +23,10 @@ class TrackOptionButton: UIButton
     
     private func configureButton()
     {
-        self.setTitleColor(UIColor.white, for: .normal)
-        self.backgroundColor = CustomColor.customGreen
-        self.layer.cornerRadius = 20
-        self.titleLabel?.font = UIFont(name:"HelveticaNeue-Bold", size:15)
+        setTitleColor(UIColor.white, for: .normal)
+        backgroundColor = CustomColor.customGreen
+        layer.cornerRadius = 20
+        titleLabel?.numberOfLines = 2
+        titleLabel?.font = UIFont(name:"HelveticaNeue-Bold", size:15)
     }
 }

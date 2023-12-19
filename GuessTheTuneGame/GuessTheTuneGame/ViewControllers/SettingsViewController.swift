@@ -41,6 +41,12 @@ class SettingsViewController: UIViewController
         clearCacheButton.addTarget(self, action: #selector(clearCache(_:)), for: .touchUpInside)
         
         view.addSubview(clearCacheButton)
+        
+        clearCacheButton.translatesAutoresizingMaskIntoConstraints = false
+        clearCacheButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+        clearCacheButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 140).isActive = true
+        clearCacheButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        clearCacheButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
     }
     
     @objc func clearCache(_ sender:UIButton)
