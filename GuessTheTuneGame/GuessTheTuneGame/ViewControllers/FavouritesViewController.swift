@@ -22,7 +22,6 @@ class FavouritesViewController: UIViewController, UITableViewDelegate, UITableVi
         
         getAllItems()
         configureTableView()
-        print("favTracks size: ", favTracks?.count)
     }
     
     init()
@@ -37,7 +36,6 @@ class FavouritesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     private func configureTableView()
     {
-        print("configureTableView()")
         guard let tableView = tableView else {return}
 
         tableView.register(UITableViewCell.self,forCellReuseIdentifier: "cell")

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		14A6EA4F2B1A9A1A002A549C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA4E2B1A9A1A002A549C /* AppDelegate.swift */; };
 		14A6EA512B1A9A1A002A549C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */; };
-		14A6EA532B1A9A1A002A549C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA522B1A9A1A002A549C /* ViewController.swift */; };
 		14A6EA5B2B1A9A1D002A549C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EA5A2B1A9A1D002A549C /* Assets.xcassets */; };
 		14A6EA5E2B1A9A1D002A549C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EA5C2B1A9A1D002A549C /* LaunchScreen.storyboard */; };
 		14A6EA692B1A9A1D002A549C /* GuessTheTuneGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA682B1A9A1D002A549C /* GuessTheTuneGameTests.swift */; };
@@ -40,11 +39,12 @@
 		14A6EAB22B1AA473002A549C /* AuthSpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB12B1AA473002A549C /* AuthSpotify.swift */; };
 		14A6EAB52B1AA4A0002A549C /* APISpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB42B1AA4A0002A549C /* APISpotify.swift */; };
 		14A6EAB72B1AA516002A549C /* SwipeCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAB62B1AA516002A549C /* SwipeCardViewDataSource.swift */; };
-		14A6EABE2B1AA5EE002A549C /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EABD2B1AA5EE002A549C /* achievement.wav */; };
 		14A6EAC02B1AA5FC002A549C /* bubble_pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */; };
 		14A6EAD62B311900002A549C /* TrackDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAD42B311900002A549C /* TrackDataModel.xcdatamodeld */; };
 		14A6EAD92B311936002A549C /* TrackItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAD72B311936002A549C /* TrackItem+CoreDataClass.swift */; };
 		14A6EADA2B311936002A549C /* TrackItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAD82B311936002A549C /* TrackItem+CoreDataProperties.swift */; };
+		14A6EADC2B311BA4002A549C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EADB2B311BA4002A549C /* ProfileViewController.swift */; };
+		14A6EADE2B312072002A549C /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EADD2B312072002A549C /* achievement.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,6 @@
 		14A6EA4B2B1A9A1A002A549C /* GuessTheTuneGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheTuneGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A6EA4E2B1A9A1A002A549C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14A6EA522B1A9A1A002A549C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14A6EA5A2B1A9A1D002A549C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14A6EA5D2B1A9A1D002A549C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14A6EA5F2B1A9A1D002A549C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,13 +101,13 @@
 		14A6EAB12B1AA473002A549C /* AuthSpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSpotify.swift; sourceTree = "<group>"; };
 		14A6EAB42B1AA4A0002A549C /* APISpotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISpotify.swift; sourceTree = "<group>"; };
 		14A6EAB62B1AA516002A549C /* SwipeCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardViewDataSource.swift; sourceTree = "<group>"; };
-		14A6EABD2B1AA5EE002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = achievement.wav; path = "../../../Nov29/guessthetune_swift/Sound Clips/achievement.wav"; sourceTree = "<group>"; };
 		14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubble_pop.mp3; sourceTree = "<group>"; };
-		14A6EAC22B1AA624002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
 		14A6EAC32B1AA7A9002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = achievement.wav; path = "../../../../Nov29/guessthetune_swift/Sound Clips/achievement.wav"; sourceTree = "<group>"; };
 		14A6EAD52B311900002A549C /* TrackDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrackDataModel.xcdatamodel; sourceTree = "<group>"; };
 		14A6EAD72B311936002A549C /* TrackItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		14A6EAD82B311936002A549C /* TrackItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		14A6EADB2B311BA4002A549C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		14A6EADD2B312072002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +160,6 @@
 		14A6EA4D2B1A9A1A002A549C /* GuessTheTuneGame */ = {
 			isa = PBXGroup;
 			children = (
-				14A6EABD2B1AA5EE002A549C /* achievement.wav */,
 				14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */,
 				14A6EA4E2B1A9A1A002A549C /* AppDelegate.swift */,
 				14A6EAC12B1AA606002A549C /* SoundEffects */,
@@ -170,7 +168,6 @@
 				14A6EA992B1A9F20002A549C /* Views */,
 				14A6EA8A2B1A9D7B002A549C /* Models */,
 				14A6EA832B1A9BF0002A549C /* ViewControllers */,
-				14A6EA522B1A9A1A002A549C /* ViewController.swift */,
 				14A6EA5A2B1A9A1D002A549C /* Assets.xcassets */,
 				14A6EA5C2B1A9A1D002A549C /* LaunchScreen.storyboard */,
 				14A6EA5F2B1A9A1D002A549C /* Info.plist */,
@@ -203,6 +200,7 @@
 				14A6EA862B1A9D0B002A549C /* FavouritesViewController.swift */,
 				14A6EA842B1A9C47002A549C /* GenreSelectionViewController.swift */,
 				14A6EA882B1A9D47002A549C /* SettingsViewController.swift */,
+				14A6EADB2B311BA4002A549C /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -259,8 +257,8 @@
 		14A6EAC12B1AA606002A549C /* SoundEffects */ = {
 			isa = PBXGroup;
 			children = (
-				14A6EAC22B1AA624002A549C /* achievement.wav */,
 				14A6EAC32B1AA7A9002A549C /* achievement.wav */,
+				14A6EADD2B312072002A549C /* achievement.wav */,
 				14A6EABF2B1AA5FB002A549C /* bubble_pop.mp3 */,
 			);
 			path = SoundEffects;
@@ -370,7 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A6EABE2B1AA5EE002A549C /* achievement.wav in Resources */,
+				14A6EADE2B312072002A549C /* achievement.wav in Resources */,
 				14A6EA5E2B1A9A1D002A549C /* LaunchScreen.storyboard in Resources */,
 				14A6EAC02B1AA5FC002A549C /* bubble_pop.mp3 in Resources */,
 				14A6EA5B2B1A9A1D002A549C /* Assets.xcassets in Resources */,
@@ -404,13 +402,13 @@
 				14A6EAB52B1AA4A0002A549C /* APISpotify.swift in Sources */,
 				14A6EAAE2B1AA3CE002A549C /* CustomColor.swift in Sources */,
 				14A6EA852B1A9C47002A549C /* GenreSelectionViewController.swift in Sources */,
-				14A6EA532B1A9A1A002A549C /* ViewController.swift in Sources */,
 				14A6EA922B1A9E71002A549C /* Genre.swift in Sources */,
 				14A6EAA52B1AA0F6002A549C /* SwipeCardView.swift in Sources */,
 				14A6EA942B1A9E9D002A549C /* OptionTracks.swift in Sources */,
 				14A6EA8C2B1A9D8E002A549C /* Artist.swift in Sources */,
 				14A6EA4F2B1A9A1A002A549C /* AppDelegate.swift in Sources */,
 				14A6EAA12B1AA085002A549C /* TrackOptionsView.swift in Sources */,
+				14A6EADC2B311BA4002A549C /* ProfileViewController.swift in Sources */,
 				14A6EA902B1A9E2F002A549C /* UserProfile.swift in Sources */,
 				14A6EA8E2B1A9DE3002A549C /* Question.swift in Sources */,
 				14A6EA9B2B1A9F34002A549C /* GenreButton.swift in Sources */,

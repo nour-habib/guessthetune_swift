@@ -158,9 +158,9 @@ class APISpotify
             let jsonDecoder = JSONDecoder()
             do
             {
-                print("userProfile: response: ", response)
+                //print("userProfile: response: ", response)
                 let userProfileInfo = try jsonDecoder.decode(UserProfile.self,from:data)
-                print("userProfile info: ", userProfileInfo);
+                //print("userProfile info: ", userProfileInfo);
                // searchResults.append(contentsOf: albums.albums.items)
                // completion(.success(searchResults))
             }

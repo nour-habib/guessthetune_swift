@@ -9,25 +9,8 @@ import CoreData
 
 class CoreDataX
 {
-    init(){}
-    
-    var managedObjectContext: NSManagedObjectContext?
-    
     func saveItem(track: Track) throws
     {
-//        guard let managedObjectContext = managedObjectContext else { print("managedObject nil")
-//            return}
-//        print("managedObject not nil")
-        
-        if(context == nil)
-        {
-            print("context nil")
-        }
-        else
-        {
-            print("context not nil")
-        }
-
         let newTrackItem = TrackItem(context: context)
         newTrackItem.album = track.album?.name
         newTrackItem.artists = track.artists[0].name
@@ -46,13 +29,11 @@ class CoreDataX
 
     func deleteItem(track: TrackItem) throws
     {
-        guard let managedObjectContext = managedObjectContext else {return}
-        
-        managedObjectContext.delete(track)
+        context.delete(track)
         
         do
         {
-            try managedObjectContext.save()
+            try context.save()
         }
         catch
         {
