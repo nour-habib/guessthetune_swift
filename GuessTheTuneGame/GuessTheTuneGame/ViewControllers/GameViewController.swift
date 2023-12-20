@@ -45,6 +45,7 @@ class GameViewController: UIViewController
             self.view.addSubview(stackContainer)
             self.configureStackContainer()
             self.gameQuestionsArr = GamePlaylist.shared.newGame()
+            print("gameQuestionsArr size: ", self.gameQuestionsArr?.count)
             stackContainer.dataSource = self
             
             self.configureSwipeTextView()

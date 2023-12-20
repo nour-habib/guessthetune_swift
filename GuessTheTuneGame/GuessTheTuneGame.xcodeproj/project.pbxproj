@@ -11,7 +11,6 @@
 		14A6EA512B1A9A1A002A549C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA502B1A9A1A002A549C /* SceneDelegate.swift */; };
 		14A6EA5B2B1A9A1D002A549C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EA5A2B1A9A1D002A549C /* Assets.xcassets */; };
 		14A6EA5E2B1A9A1D002A549C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EA5C2B1A9A1D002A549C /* LaunchScreen.storyboard */; };
-		14A6EA692B1A9A1D002A549C /* GuessTheTuneGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA682B1A9A1D002A549C /* GuessTheTuneGameTests.swift */; };
 		14A6EA732B1A9A1D002A549C /* GuessTheTuneGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA722B1A9A1D002A549C /* GuessTheTuneGameUITests.swift */; };
 		14A6EA752B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA742B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift */; };
 		14A6EA822B1A9BC4002A549C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EA812B1A9BC4002A549C /* GameViewController.swift */; };
@@ -45,6 +44,9 @@
 		14A6EADA2B311936002A549C /* TrackItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAD82B311936002A549C /* TrackItem+CoreDataProperties.swift */; };
 		14A6EADC2B311BA4002A549C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EADB2B311BA4002A549C /* ProfileViewController.swift */; };
 		14A6EADE2B312072002A549C /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14A6EADD2B312072002A549C /* achievement.wav */; };
+		14A6EAE12B325F3B002A549C /* GamePlaylistTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAE02B325F3B002A549C /* GamePlaylistTest.swift */; };
+		14A6EAE32B339348002A549C /* GameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAE22B339348002A549C /* GameViewControllerTest.swift */; };
+		14A6EAE52B339A60002A549C /* SwipeCardViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAE42B339A60002A549C /* SwipeCardViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,6 @@
 		14A6EA5D2B1A9A1D002A549C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14A6EA5F2B1A9A1D002A549C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A6EA642B1A9A1D002A549C /* GuessTheTuneGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheTuneGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A6EA682B1A9A1D002A549C /* GuessTheTuneGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheTuneGameTests.swift; sourceTree = "<group>"; };
 		14A6EA6E2B1A9A1D002A549C /* GuessTheTuneGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheTuneGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A6EA722B1A9A1D002A549C /* GuessTheTuneGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheTuneGameUITests.swift; sourceTree = "<group>"; };
 		14A6EA742B1A9A1D002A549C /* GuessTheTuneGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheTuneGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -108,6 +109,9 @@
 		14A6EAD82B311936002A549C /* TrackItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		14A6EADB2B311BA4002A549C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		14A6EADD2B312072002A549C /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
+		14A6EAE02B325F3B002A549C /* GamePlaylistTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlaylistTest.swift; sourceTree = "<group>"; };
+		14A6EAE22B339348002A549C /* GameViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerTest.swift; sourceTree = "<group>"; };
+		14A6EAE42B339A60002A549C /* SwipeCardViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +182,9 @@
 		14A6EA672B1A9A1D002A549C /* GuessTheTuneGameTests */ = {
 			isa = PBXGroup;
 			children = (
-				14A6EA682B1A9A1D002A549C /* GuessTheTuneGameTests.swift */,
+				14A6EAE22B339348002A549C /* GameViewControllerTest.swift */,
+				14A6EAE42B339A60002A549C /* SwipeCardViewTest.swift */,
+				14A6EAE02B325F3B002A549C /* GamePlaylistTest.swift */,
 			);
 			path = GuessTheTuneGameTests;
 			sourceTree = "<group>";
@@ -442,7 +448,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A6EA692B1A9A1D002A549C /* GuessTheTuneGameTests.swift in Sources */,
+				14A6EAE32B339348002A549C /* GameViewControllerTest.swift in Sources */,
+				14A6EAE52B339A60002A549C /* SwipeCardViewTest.swift in Sources */,
+				14A6EAE12B325F3B002A549C /* GamePlaylistTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

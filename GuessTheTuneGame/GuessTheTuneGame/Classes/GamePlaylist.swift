@@ -23,8 +23,6 @@ class GamePlaylist
     
     private let playListLength: Int = 10
     private var questionsArray: [Question]?
-
-    init(){}
     
     public func newGame() -> Array<Question>
     {
@@ -96,8 +94,10 @@ class GamePlaylist
         
         for track in arr
         {
+            print("Track_Test: ", track)
             if (track.preview_url != "<null>" || track.preview_url != "" ||  track.preview_url != "nil" || track.preview_url != " nil")
             {
+                print("Track_Test: true")
                 newArr.append(track)
             }
         }
@@ -151,3 +151,13 @@ class GamePlaylist
     }
     
 }
+
+#if DEBUG
+extension GamePlaylist
+{
+    func removeNull_public(arr: [Track]) -> [Track]
+    {
+        removeNull(arr: arr)
+    }
+}
+#endif

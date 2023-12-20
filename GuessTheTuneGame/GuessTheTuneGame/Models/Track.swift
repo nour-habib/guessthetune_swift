@@ -23,5 +23,5 @@ struct Track: Codable
     var external_urls = ["":""]
     var id = ""
     var name = ""
-    var preview_url : String?
+    var preview_url = ""
 }
