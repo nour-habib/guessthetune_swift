@@ -11,7 +11,6 @@ import XCTest
 class SwipeCardViewTest: XCTestCase
 {
     private var swipeCardView: SwipeCardView!
-    private var questionsArr: [Question]!
 
     override func setUpWithError() throws
     {
@@ -19,19 +18,14 @@ class SwipeCardViewTest: XCTestCase
         
         swipeCardView = SwipeCardView(frame: .zero)
         let optionTracks = OptionTracks(optA: Track(), optB: Track(), optC: Track(), optD: Track())
-        let q1 = Question(mainTrack: Track(), optionTracks: optionTracks)
-        let q2 = Question(mainTrack: Track(), optionTracks: optionTracks)
-        let q3 = Question(mainTrack: Track(), optionTracks: optionTracks)
-        let q4 = Question(mainTrack: Track(), optionTracks: optionTracks)
+        let q = Question(mainTrack: Track(), optionTracks: optionTracks)
         
-        questionsArr = [q1,q2,q3,q4]
-        swipeCardView.dataSource = questionsArr[2]
+        swipeCardView.dataSource = q
     }
 
     override func tearDownWithError() throws {
         super.tearDown()
         swipeCardView = nil
-        questionsArr = nil
     }
 
     func testExample() throws {

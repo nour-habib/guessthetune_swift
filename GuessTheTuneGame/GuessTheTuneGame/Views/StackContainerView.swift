@@ -172,7 +172,7 @@ class StackContainerView: UIView, SwipeCardDelegate
         setNeedsLayout()
         layoutIfNeeded()
         self.numOfCards = datasource.numOfCards()
-        self.remainingCards = self.numOfCards
+        self.remainingCards = numOfCards
         
         for i in 0...numOfCards-1
         {

@@ -11,23 +11,20 @@ import XCTest
 class GameViewControllerTest: XCTestCase
 {
     private var gameViewController: GameViewController!
-    private var dt: SwipeCardViewDataSource!
+    private var questionsArr: [Question]!
 
     override func setUpWithError() throws
     {
         super.setUp()
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        //continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-//        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
         
         gameViewController = GameViewController("pop")
+        let optionTracks = OptionTracks(optA: Track(), optB: Track(), optC: Track(), optD: Track())
+        let q1 = Question(mainTrack: Track(), optionTracks: optionTracks)
+        let q2 = Question(mainTrack: Track(), optionTracks: optionTracks)
+        let q3 = Question(mainTrack: Track(), optionTracks: optionTracks)
+        let q4 = Question(mainTrack: Track(), optionTracks: optionTracks)
         
-        
+        questionsArr = [q1,q2,q3,q4]
     }
 
     override func tearDownWithError() throws {
