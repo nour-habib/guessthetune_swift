@@ -107,7 +107,7 @@ class GenreSelectionViewController: UIViewController
 
         genreButtonView.translatesAutoresizingMaskIntoConstraints = false
         genreButtonView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        genreButtonView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+        genreButtonView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -50).isActive = true
         genreButtonView.heightAnchor.constraint(equalToConstant: 400).isActive = true
         genreButtonView.widthAnchor.constraint(equalToConstant: 100).isActive = true
     }

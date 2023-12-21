@@ -14,14 +14,6 @@ class GameViewController: UIViewController
     private var stackContainerView: StackContainerView?
     private var swipeTextView: UITextView?
     
-    lazy var activityIndicator: UIActivityIndicatorView =
-    {
-        let activityIndicator = UIActivityIndicatorView(style: .large)
-        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicator.backgroundColor = .yellow
-        return activityIndicator
-    }()
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -33,10 +25,6 @@ class GameViewController: UIViewController
         //Start game
         GamePlaylist.shared.initializeGame(genre: genre ?? "pop")
         
-        view.addSubview(activityIndicator)
-        activityIndicator.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        activityIndicator.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-
         //Replace with DispatchQueue
         delayWithSeconds(3)
         {
@@ -45,7 +33,6 @@ class GameViewController: UIViewController
             self.view.addSubview(stackContainer)
             self.configureStackContainer()
             self.gameQuestionsArr = GamePlaylist.shared.newGame()
-            print("gameQuestionsArr size: ", self.gameQuestionsArr?.count)
             stackContainer.dataSource = self
             
             self.configureSwipeTextView()
@@ -68,17 +55,13 @@ class GameViewController: UIViewController
     
     private func configureStackContainer()
     {
-        let screensize = UIScreen.main.bounds
-        let w = screensize.width
-        let h =  screensize.height
-        
         guard let stackContainer = stackContainerView else {return}
         
         stackContainer.translatesAutoresizingMaskIntoConstraints = false
         stackContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
-        stackContainer.widthAnchor.constraint(equalToConstant: w).isActive = true
-        stackContainer.heightAnchor.constraint(equalToConstant: h).isActive = true
+        stackContainer.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
+        stackContainer.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height).isActive = true
     }
     
     private func configureSwipeTextView()

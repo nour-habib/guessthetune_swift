@@ -47,7 +47,6 @@
 		14A6EAE12B325F3B002A549C /* GamePlaylistTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAE02B325F3B002A549C /* GamePlaylistTest.swift */; };
 		14A6EAE32B339348002A549C /* GameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAE22B339348002A549C /* GameViewControllerTest.swift */; };
 		14A6EAE52B339A60002A549C /* SwipeCardViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAE42B339A60002A549C /* SwipeCardViewTest.swift */; };
-		14A6EAE92B33E1D8002A549C /* StackContainerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6EAE82B33E1D8002A549C /* StackContainerViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +112,6 @@
 		14A6EAE02B325F3B002A549C /* GamePlaylistTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlaylistTest.swift; sourceTree = "<group>"; };
 		14A6EAE22B339348002A549C /* GameViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerTest.swift; sourceTree = "<group>"; };
 		14A6EAE42B339A60002A549C /* SwipeCardViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardViewTest.swift; sourceTree = "<group>"; };
-		14A6EAE82B33E1D8002A549C /* StackContainerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				14A6EAE22B339348002A549C /* GameViewControllerTest.swift */,
-				14A6EAE82B33E1D8002A549C /* StackContainerViewTest.swift */,
 				14A6EAE42B339A60002A549C /* SwipeCardViewTest.swift */,
 				14A6EAE02B325F3B002A549C /* GamePlaylistTest.swift */,
 			);
@@ -454,7 +451,6 @@
 				14A6EAE32B339348002A549C /* GameViewControllerTest.swift in Sources */,
 				14A6EAE52B339A60002A549C /* SwipeCardViewTest.swift in Sources */,
 				14A6EAE12B325F3B002A549C /* GamePlaylistTest.swift in Sources */,
-				14A6EAE92B33E1D8002A549C /* StackContainerViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

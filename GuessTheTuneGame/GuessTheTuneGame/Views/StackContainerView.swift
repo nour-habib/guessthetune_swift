@@ -116,24 +116,11 @@ class StackContainerView: UIView, SwipeCardDelegate
         {
             scoreTextView.text = String(getScore())
         }
-    
-        //guard let datasource = dataSource else{return}
-        //view.removeFromSuperview()
         
         UIView.transition(with: view, duration: 1, options: [.transitionCrossDissolve], animations: {
           view.removeFromSuperview()
         }, completion: nil)
-        
-//        UIView.transition(with: view,
-//                          duration: 3,
-//            options: [.transitionCrossDissolve],
-//            animations: {
-//            view.removeFromSuperview()
-//            }, completion: nil)
-
-        
     
-        //Cards finished
         count = count + 1
         if(count == numOfCards)
         {
