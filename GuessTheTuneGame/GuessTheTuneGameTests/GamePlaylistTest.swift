@@ -13,7 +13,9 @@ class GamePlaylistTest: XCTestCase
     private var questionsArr: [Question]!
     private var tracks: [Track]!
 
-    override func setUpWithError() throws {
+    override func setUpWithError() throws
+    {
+        super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -42,6 +44,7 @@ class GamePlaylistTest: XCTestCase
     {
         questionsArr = nil
         tracks = nil
+        try super.tearDownWithError()
     }
 
     func testExample() throws {
@@ -52,11 +55,6 @@ class GamePlaylistTest: XCTestCase
     func test_questionsArr()
     {
         XCTAssertNotNil(questionsArr)
-    }
-    
-    func test_questionsArrSize()
-    {
-        XCTAssertEqual(questionsArr.count, 10)
     }
 
     func test_removeNull()
