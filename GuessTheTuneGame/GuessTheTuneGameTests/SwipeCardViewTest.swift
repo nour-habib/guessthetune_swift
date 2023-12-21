@@ -11,21 +11,11 @@ import XCTest
 class SwipeCardViewTest: XCTestCase
 {
     private var swipeCardView: SwipeCardView!
-    private var datasource: SwipeCardViewDataSource!
-    private var delegate: SwipeCardDelegate!
     private var questionsArr: [Question]!
 
     override func setUpWithError() throws
     {
         super.setUp()
-
-//        // In UI tests it is usually best to stop immediately when a failure occurs.
-//        continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        //XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
         
         swipeCardView = SwipeCardView(frame: .zero)
         let optionTracks = OptionTracks(optA: Track(), optB: Track(), optC: Track(), optD: Track())
@@ -36,16 +26,11 @@ class SwipeCardViewTest: XCTestCase
         
         questionsArr = [q1,q2,q3,q4]
         swipeCardView.dataSource = questionsArr[2]
-        
-        
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
         swipeCardView = nil
-        datasource = nil
-        delegate = nil
         questionsArr = nil
     }
 
@@ -68,13 +53,4 @@ class SwipeCardViewTest: XCTestCase
     {
         XCTAssertNotNil(swipeCardView.dataSource?.mainTrack)
     }
-    
-    func test_numberOfCards()
-    {
-        XCTAssertEqual(delegate.n, <#T##expression2: Equatable##Equatable#>)
-    }
-    
-   
-    
-
 }
