@@ -38,7 +38,8 @@ class GamePlaylistTest: XCTestCase
         try super.tearDownWithError()
     }
 
-    func testExample() throws {
+    func testExample() throws
+    {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
@@ -48,8 +49,8 @@ class GamePlaylistTest: XCTestCase
         XCTAssertNotNil(questionsArr)
     }
 
-//    func test_removeNull()
-//    {
-//        XCTAssertEqual(tracks.count, 1)
-//    }
+    func test_removeNull()
+    {
+        XCTAssertEqual(tracks.count, 1)
+    }
 }

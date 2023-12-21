@@ -95,7 +95,7 @@ class GamePlaylist
         for track in arr
         {
             print("Track_Test: ", track)
-            if (track.preview_url != "<null>" || track.preview_url != "" ||  track.preview_url != "nil" || track.preview_url != " nil")
+            if (track.preview_url != "<null>" && track.preview_url != "" &&  track.preview_url != "nil" && track.preview_url != " nil")
             {
                 print("Track_Test: true")
                 newArr.append(track)
