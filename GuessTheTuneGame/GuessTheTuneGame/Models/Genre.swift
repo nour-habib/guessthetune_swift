@@ -12,5 +12,5 @@ enum Genre: String
     case rap = "rap"
     case rock = "rock"
     case rnb = "r&b"
-    case pop = "90s"
+    case pop = "reggaeton"
 }

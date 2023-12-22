@@ -90,7 +90,6 @@ class APISpotify
                     tracksArray.append(contentsOf: tracks.items ?? [])
                     //cache.removeCachedResponse(for: urlRequest) //test cache
                     
-                    
                     completion(.success(tracksArray))
                 }
                 catch let e
@@ -115,7 +114,7 @@ class APISpotify
                 {
                     //dispatch.enter();
                     let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
-                    tracksArray.append(contentsOf: tracks.items ?? [])
+                    tracksArray.append(contentsOf: tracks.items ?? [Track]())
                     print("tracks: ", tracks);
                     completion(.success(tracksArray))
                     //dispatch.leave()
@@ -136,11 +135,10 @@ class APISpotify
         }
     }
 
-
+    
+    /* For later use */
     public func userProfile(completion: @escaping (Result<UserProfile,Error>) -> Void)
     {
-        //var userDetailsArr = [Use]?
-        
         guard let url = URL(string:apiURL+"/me") else {return}
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"

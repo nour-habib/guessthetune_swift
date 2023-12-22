@@ -15,10 +15,15 @@ class GamePlaylist
     {
         //"1tIioq32KjWlt5vvk5rhqX" rap id
         static let rapIds = ["3JdI9IvgSxFM3bttMKPYCC"]
-        static let popIds = ["6odcotWv2xd7NP7RrGBS5b"] //90s
-        static let rnbIds = ["0QhwxYDUougJiVDtyN4Lhm"]
+        static let popIds = ["7z9bNKljyF4BCVf6srNhN0"]
+        static let rnbIds = ["3pYzFXVQdVO8R1jXRUon2u"]
         static let rockIds = ["4Xx4P00hWGpP0yGIVnLIYV"]
+        //rnb: 3pYzFXVQdVO8R1jXRUon2u
+        //rnb: 0QhwxYDUougJiVDtyN4Lhm
+        //reggaeton: 7z9bNKljyF4BCVf6srNhN0
         //5xrx34yrP6lj9NzvBx9PuT
+        //pop: 6odcotWv2xd7NP7RrGBS5b
+        
     }
     
     private let playListLength: Int = 10
@@ -39,6 +44,7 @@ class GamePlaylist
     /* Gets tracks from Spotify using album ids */
     public func initializeGame(genre:String)
     {
+        print("initializeGame()")
         var ids = [String]()
         
         if(genre=="rap")
@@ -83,6 +89,7 @@ class GamePlaylist
         
         dispatch.notify(queue: .main)
         {
+            print("notified: ", albumList)
             self.createGamePlaylist(tracksArr: albumList)
         }
     }
@@ -94,10 +101,8 @@ class GamePlaylist
         
         for track in arr
         {
-            print("Track_Test: ", track)
             if (track.preview_url != "<null>" && track.preview_url != "" &&  track.preview_url != "nil" && track.preview_url != " nil")
             {
-                print("Track_Test: true")
                 newArr.append(track)
             }
         }
@@ -108,6 +113,8 @@ class GamePlaylist
     /* Creates game questions */
     private func createGamePlaylist(tracksArr: [Track]) -> Void
     {
+        print("createGamePlaylist()")
+        print("tracksArr: ", tracksArr)
         let nullRemovedArr = removeNull(arr: tracksArr)
         
         var questionsArr = [Question]()

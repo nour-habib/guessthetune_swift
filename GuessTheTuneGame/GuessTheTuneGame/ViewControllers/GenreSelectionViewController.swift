@@ -44,26 +44,25 @@ class GenreSelectionViewController: UIViewController
         popButton.addTarget(self, action: #selector(buttonSelected), for: .touchDown)
         
         rapButton.addAction(UIAction{_ in
-            self.selectGenre(genre: "rap")
+            self.selectGenre(genre: Genre.rap.rawValue)
         }, for: .touchUpInside)
         
         rnbButton.addAction(UIAction{_ in
-            self.selectGenre(genre: "rnb")
+            self.selectGenre(genre: Genre.rnb.rawValue)
         }, for: .touchUpInside)
         
         rockButton.addAction(UIAction{_ in
-            self.selectGenre(genre: "rock")
+            self.selectGenre(genre: Genre.rock.rawValue)
         }, for: .touchUpInside)
         
         popButton.addAction(UIAction{_ in
-            self.selectGenre(genre: "pop")
+            self.selectGenre(genre: Genre.pop.rawValue)
         }, for: .touchUpInside)
         
     }
     
     private func selectGenre(genre: String)
     {
-        print("selectGenre(): ", genre)
         saveGenre(genre: genre)
         initializeTabBar(genre: genre)
     }

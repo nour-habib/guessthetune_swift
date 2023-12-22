@@ -53,7 +53,7 @@ class GenreButtonView: UIView
             SoundEffects.playBubblePop()
             self.applyRnbButtonConstraints()
             rnbButton.layer.cornerRadius = 0.5 * (rnbButton.frame.height)
-            rnbButton.setTitle(Genre.rnb.rawValue,for:.normal)
+            rnbButton.setTitle(Genre.rnb.rawValue, for:.normal)
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now()+5)

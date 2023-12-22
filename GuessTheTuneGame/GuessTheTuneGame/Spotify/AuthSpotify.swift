@@ -73,7 +73,6 @@ class AuthSpotify
     private func authorized() -> Bool
     {
         return self.authorize
-        
     }
 }
 
