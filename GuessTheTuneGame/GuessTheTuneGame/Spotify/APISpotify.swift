@@ -58,7 +58,7 @@ class APISpotify
     {
         var tracksArray = [Track]()
         
-        let api_url = apiURL + "/albums/" + id + "/tracks?market=US&limit=50"
+        let api_url = apiURL + "/albums/" + id + "/tracks?market=US&limit=30"
         
         guard let url = URL(string: api_url) else {return}
         var urlRequest = URLRequest(url: url)
@@ -113,6 +113,8 @@ class APISpotify
                 do
                 {
                     //dispatch.enter();
+                    print("data: ", data)
+                    print("response: ", response)
                     let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
                     tracksArray.append(contentsOf: tracks.items ?? [Track]())
                     print("tracks: ", tracks);

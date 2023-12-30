@@ -25,7 +25,7 @@ class GameViewController: UIViewController
         print("Selected genre: ", genre)
         
         //Start game
-        GamePlaylist.shared.initializeGame(genre: genre ?? "pop")
+        GamePlaylist.shared.initializeGame(genre: genre ?? Genre.pop.rawValue)
         
         //Replace with DispatchQueue
         delayWithSeconds(5)

@@ -15,13 +15,14 @@ class GamePlaylist
     {
         //"1tIioq32KjWlt5vvk5rhqX" rap id
         static let rapIds = ["3JdI9IvgSxFM3bttMKPYCC"]
-        static let popIds = ["7z9bNKljyF4BCVf6srNhN0"]
+        static let popIds = ["7z9bNKljyF4BCVf6srNhN0"] //temporarily chanaged to reggaeton
         static let rnbIds = ["3pYzFXVQdVO8R1jXRUon2u"]
         static let rockIds = ["4Xx4P00hWGpP0yGIVnLIYV"]
         //rnb: 3pYzFXVQdVO8R1jXRUon2u
         //rnb: 0QhwxYDUougJiVDtyN4Lhm
         //reggaeton: 7z9bNKljyF4BCVf6srNhN0
-        //5xrx34yrP6lj9NzvBx9PuT
+        //classic rock: 5xrx34yrP6lj9NzvBx9PuT
+        //90s alt:4Xx4P00hWGpP0yGIVnLIYV
         //pop: 6odcotWv2xd7NP7RrGBS5b
         
     }
@@ -47,19 +48,19 @@ class GamePlaylist
         print("initializeGame()")
         var ids = [String]()
         
-        if(genre=="rap")
+        if(genre == Genre.rap.rawValue)
         {
             ids = playlistIDs.rapIds
         }
-        else if(genre=="rnb")
+        else if(genre == Genre.rnb.rawValue)
         {
             ids = playlistIDs.rnbIds
         }
-        else if(genre=="pop")
+        else if(genre == Genre.pop.rawValue)
         {
             ids = playlistIDs.popIds
         }
-        else if(genre=="rock")
+        else if(genre == Genre.rock.rawValue)
         {
             ids = playlistIDs.rockIds
         }
