@@ -22,7 +22,6 @@ class AuthSpotify
     
     public func connect()
     {
-        print("connect")
         guard let url = URL(string: baseURL) else {return}
         
         var urlComponents = URLComponents()
@@ -37,7 +36,7 @@ class AuthSpotify
         let hp = headerParameter.data(using: .utf8)
         guard let base64 = hp?.base64EncodedString() else
         {
-            print("fail")
+            print("Fail")
             return
             
         }
@@ -54,15 +53,15 @@ class AuthSpotify
                 let result = try? JSONSerialization.jsonObject(with: data, options: [])
                 if let JSON = result as? [String: Any]
                 {
-                    print("authorization data: ", data)
+                    //print("authorization data: ", data)
                     let status = JSON["access_token"] as! String
-                    print("token: ", status);
+                    print("Token: ", status);
                     self?.accessToken = status
                     UserDefaults.standard.set(self?.accessToken,forKey:"token")
                     self?.authorize = true
                    
                     
-                    print("connection successful.")
+                    print("Connection successful.")
                 }
             }
         

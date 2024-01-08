@@ -13,18 +13,11 @@ class GamePlaylist
     
     struct playlistIDs
     {
-        //"1tIioq32KjWlt5vvk5rhqX" rap id
+        
         static let rapIds = ["3JdI9IvgSxFM3bttMKPYCC"]
-        static let popIds = ["7z9bNKljyF4BCVf6srNhN0"] //temporarily chanaged to reggaeton
+        static let popIds = ["7z9bNKljyF4BCVf6srNhN0"] //Temporarily chanaged to reggaeton
         static let rnbIds = ["3pYzFXVQdVO8R1jXRUon2u"]
         static let rockIds = ["4Xx4P00hWGpP0yGIVnLIYV"]
-        //rnb: 3pYzFXVQdVO8R1jXRUon2u
-        //rnb: 0QhwxYDUougJiVDtyN4Lhm
-        //reggaeton: 7z9bNKljyF4BCVf6srNhN0
-        //classic rock: 5xrx34yrP6lj9NzvBx9PuT
-        //90s alt:4Xx4P00hWGpP0yGIVnLIYV
-        //pop: 6odcotWv2xd7NP7RrGBS5b
-        
     }
     
     private let playListLength: Int = 10
@@ -45,7 +38,6 @@ class GamePlaylist
     /* Gets tracks from Spotify using album ids */
     public func initializeGame(genre:String)
     {
-        print("initializeGame()")
         var ids = [String]()
         
         if(genre == Genre.rap.rawValue)
@@ -90,7 +82,6 @@ class GamePlaylist
         
         dispatch.notify(queue: .main)
         {
-            print("notified: ", albumList)
             self.createGamePlaylist(tracksArr: albumList)
         }
     }
@@ -114,8 +105,6 @@ class GamePlaylist
     /* Creates game questions */
     private func createGamePlaylist(tracksArr: [Track]) -> Void
     {
-        print("createGamePlaylist()")
-        print("tracksArr: ", tracksArr)
         let nullRemovedArr = removeNull(arr: tracksArr)
         
         var questionsArr = [Question]()

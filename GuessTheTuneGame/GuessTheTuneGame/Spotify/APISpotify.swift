@@ -72,23 +72,21 @@ class APISpotify
         let jsonDecoder = JSONDecoder()
         
         let currentGenre = UserDefaults.standard.string(forKey: "current_genre")
-        let prevGenre = UserDefaults.standard.string(forKey: "previous_genre")
-        
-        print("currentGenre: ", currentGenre ?? "")
-        print("previousGenre: ", prevGenre ?? "")
+        //let prevGenre = UserDefaults.standard.string(forKey: "previous_genre")
         
         //cache.removeAllCachedResponses()
         
-        if(currentGenre == "")
+        
+        if(currentGenre == "") //Temporarily set to empty string
         {
             if let data = cache.cachedResponse(for: urlRequest)?.data
-            { print("data from cached.\n")
+            { print("From cache.\n")
                 do
                 {
                     let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
                     print("tracks: ", tracks);
                     tracksArray.append(contentsOf: tracks.items ?? [])
-                    //cache.removeCachedResponse(for: urlRequest) //test cache
+                    //cache.removeCachedResponse(for: urlRequest) //Test cache
                     
                     completion(.success(tracksArray))
                 }
@@ -101,7 +99,7 @@ class APISpotify
         }
         else
         {
-            print("no cache.")
+            
             //let dispatch = DispatchGroup();
             let urlSession = URLSession.shared.dataTask(with: urlRequest){ data, response, error in
                 guard let data = data, error == nil else
@@ -113,11 +111,9 @@ class APISpotify
                 do
                 {
                     //dispatch.enter();
-                    print("data: ", data)
-                    print("response: ", response)
                     let tracks = try jsonDecoder.decode(TrackRoot.self,from:data)
                     tracksArray.append(contentsOf: tracks.items ?? [Track]())
-                    print("tracks: ", tracks);
+                    //print("tracks: ", tracks);
                     completion(.success(tracksArray))
                     //dispatch.leave()
                 }

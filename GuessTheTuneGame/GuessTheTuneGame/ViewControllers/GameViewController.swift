@@ -22,8 +22,6 @@ class GameViewController: UIViewController
         
         view.backgroundColor = CustomColor.offWhite
         
-        print("Selected genre: ", genre)
-        
         //Start game
         GamePlaylist.shared.initializeGame(genre: genre ?? Genre.pop.rawValue)
         
@@ -31,7 +29,7 @@ class GameViewController: UIViewController
         delayWithSeconds(5)
         {
             self.gameQuestionsArr = GamePlaylist.shared.newGame()
-            print("gameQuestionsArr: ", self.gameQuestionsArr?.count)
+            //print("gameQuestionsArr: ", self.gameQuestionsArr?.count)
         }
         
         delayWithSeconds(5)
@@ -54,7 +52,6 @@ class GameViewController: UIViewController
     init(_ genre: String)
     {
         self.genre = genre
-//        self.stackContainerView = StackContainerView(genre:genre)
         self.swipeTextView = UITextView()
         super.init(nibName: nil,bundle: nil)
     }
