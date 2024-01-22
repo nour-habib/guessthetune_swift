@@ -74,7 +74,7 @@ class GenreSelectionViewController: UIViewController
     
     //MARK: UITabBarController Initialization
     
-    private func initializeTabBar(genre:String)
+    func initializeTabBar(genre:String)
     {
         let tabBar = UITabBarController()
         tabBar.tabBar.tintColor = CustomColor.pastelOrange

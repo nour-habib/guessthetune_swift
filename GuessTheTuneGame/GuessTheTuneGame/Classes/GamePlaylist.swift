@@ -17,7 +17,7 @@ class GamePlaylist
         static let rapIds = ["3JdI9IvgSxFM3bttMKPYCC"]
         static let popIds = ["7z9bNKljyF4BCVf6srNhN0"] //Temporarily chanaged to reggaeton
         static let rnbIds = ["3pYzFXVQdVO8R1jXRUon2u"]
-        static let rockIds = ["4Xx4P00hWGpP0yGIVnLIYV"]
+        static let rockIds = ["3JdI9IvgSxFM3bttMKPYCC"] //Temporarily changed to rap
     }
     
     private let playListLength: Int = 10

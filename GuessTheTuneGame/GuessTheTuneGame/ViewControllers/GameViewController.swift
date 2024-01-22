@@ -30,6 +30,15 @@ class GameViewController: UIViewController
         {
             self.gameQuestionsArr = GamePlaylist.shared.newGame()
             //print("gameQuestionsArr: ", self.gameQuestionsArr?.count)
+            
+            if(self.gameQuestionsArr?.count == 0)
+            {
+                print("gameQuestionsArr == 0")
+                let genreSelectVC = GenreSelectionViewController()
+                guard let genre = self.genre else {return}
+                genreSelectVC.initializeTabBar(genre: genre)
+                
+            }
         }
         
         delayWithSeconds(5)
